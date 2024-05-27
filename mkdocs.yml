@@ -1,0 +1,104 @@
+site_name: Home Lab Docs
+site_url: https://www.docs.vnerd.nl/
+site_author: Karam Ajaj
+#repo_url: https://github.com/squidfunk/mkdocs-material
+#edit_uri: edit/main/docs/
+
+# Theme Configuration
+theme:
+  name: 'material'
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  logo: assets/images/vnerd-logo-icon.png
+  custom_dir: overrides
+  language: en
+  font:
+    text: Roboto
+  features:
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - header.autohide
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    # - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - content.action.view
+
+plugins:
+  #- blog
+      #blog_dir: blog
+      #blog_toc: true
+      #post_dir: "{blog}/articles"
+  - search
+  - external-markdown
+  - awesome-pages
+  #- mkdocs-blogging-plugin
+  #- fontawesome-markdown
+  # - projects
+  # - offline
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # - pymdownx.snippets:
+  #     auto_append:
+  #       - includes/abbreviations.md
+  - pymdownx.arithmatex:
+      generic: true
+
+repo_url: https://github.com/karam-ajaj/portainer-compose
+repo_name: portainer-compose
+
+
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/karam-ajaj/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/karam.ajaj/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/karam-ajaj/
+    # - icon: fontawesome/brands/slack
+    #   link:
+    - icon: fontawesome/brands/discord
+      link: https://discordapp.com/users/1001115113245388831
+
+copyright: Copyright &copy; Karam Ajaj

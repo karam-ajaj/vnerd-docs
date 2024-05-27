@@ -1,0 +1,23 @@
+---
+comments: true
+---
+
+## ChatGPT
+write a short introduction about {} in markdown language
+
+## Volumes
+
+```bash
+/nfs-nas-swarm/config/
+/nfs-nas-swarm/data/
+```
+
+## Deployment
+No Special requirments
+
+## Docker swarm file
+```yaml
+
+```
+## Notes
+
