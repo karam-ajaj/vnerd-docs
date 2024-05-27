@@ -1,7 +1,9 @@
 ---
 comments: true
 ---
-
+``` title="authelia"
+--8<-- "../../github-repos/portainer-compose/stacks/authelia.yml"
+```
 # Authelia
 
 Open-Source Authentication and Authorization Server

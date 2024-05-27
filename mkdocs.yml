@@ -40,12 +40,13 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     # - navigation.sections
-    - navigation.expand
+    # - navigation.expand
+    - navigation.prune
     - navigation.path
     - navigation.top
     - header.autohide
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
     - search.suggest
     - search.highlight
     - search.share
@@ -53,7 +54,9 @@ theme:
     - content.code.copy
     - content.code.select
     - content.action.view
-
+    # - content.action.edit
+  # static_templates:
+  #   - get
 plugins:
   #- blog
       #blog_dir: blog
@@ -66,6 +69,11 @@ plugins:
   #- fontawesome-markdown
   # - projects
   # - offline
+
+  # https://github.com/squidfunk/mkdocs-material/discussions/3458
+  # - redirects:
+  #   redirect_maps:
+  #     get: https://github.com/karam-ajaj/portainer-compose/blob/main/README.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -81,10 +89,11 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-repo_url: https://github.com/karam-ajaj/portainer-compose
-repo_name: portainer-compose
-
-
+# repo_url: https://github.com/karam-ajaj/portainer-compose
+# repo_name: portainer-compose
+repo_url: https://github.com/karam-ajaj/vnerd-docs
+repo_name: karam-ajaj/vnerd-docs
+# edit_uri: edit/master/docs/
 
 
 extra:
