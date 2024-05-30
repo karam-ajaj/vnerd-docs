@@ -42,40 +42,8 @@ Experience the speed, reliability, and versatility of NGINX—a cornerstone in m
 The website was built using Bootstrap and the files resides on the specifide shared location
 
 ## Docker swarm file
-```yaml
-version: '3.7'
-services:
-  cv:
-    image: nginx:latest
-    environment:
-      PGID: '1000'
-      PUID: '1000'
-    volumes:
-     - /nfs-nas-swarm/data/CV:/usr/share/nginx/html
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      replicas: 3
-      labels:
-        traefik.http.routers.cv-http.middlewares: https-redirect
-        traefik.http.routers.cv-http.rule: Host(`cv.vnerd.nl`)
-        traefik.http.services.cv.loadbalancer.server.port: '80'
-        traefik.http.routers.cv-https.tls: 'true'
-        traefik.http.routers.cv-https.tls.certresolver: le
-        traefik.constraint-label: traefik-public
-        traefik.http.routers.cv-https.rule: Host(`cv.vnerd.nl`)
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.cv-https.entrypoints: https
-        traefik.http.routers.cv-http.entrypoints: http
-      placement:
-        constraints:
-         - node.labels.Arch==i686
-networks:
-  traefik-public:
-    external: true
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/cv.yml"
 ```
 
 ## Note
