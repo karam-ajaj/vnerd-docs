@@ -52,42 +52,10 @@ docker run --rm -it -p 8000:8000 -v /nfs-nas-swarm/config/docs:/docs squidfunk/m
 ```
 
 ## Docker swarm file
-```yaml
-version: '3.3'
-services:
-  docs:
-    image: keinstien/mkdocs-material:9.5.2
-    environment:
-      FAST_MODE: 'true'
-      LIVE_RELOAD_SUPPORT: 'true'
-    volumes:
-     - /nfs-nas-swarm/data/docs:/docs
-    networks:
-     - internal
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.routers.docs-https.tls: 'true'
-        traefik.http.routers.docs-https.tls.certresolver: le
-        traefik.http.routers.docs-http.entrypoints: http
-        traefik.http.services.docs.loadbalancer.server.port: '8000'
-        traefik.http.routers.docs-https.entrypoints: https
-        traefik.http.routers.docs-https.rule: Host(`docs.vnerd.nl`)
-        traefik.constraint-label: traefik-public
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.docs-http.middlewares: https-redirect
-        traefik.http.routers.docs-http.rule: Host(`docs.vnerd.nl`)
-      placement:
-        constraints:
-         - node.labels.Arch!=i686
-networks:
-  internal:
-    driver: overlay
-  traefik-public:
-    external: true
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/docs.yml"
 ```
+
+
 ## Notes
 
