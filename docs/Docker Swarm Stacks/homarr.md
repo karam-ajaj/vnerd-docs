@@ -40,46 +40,9 @@ Experience the future of home automation through simplicity and containerization
 No special requirments
 
 ## Docker swarm file
-```yaml
-version: '3.3'
-services:
-  homarr:
-    image: ghcr.io/ajnart/homarr:latest
-    environment:
-      EDIT_MODE_PASSWORD: {password}
-    volumes:
-     - /nfs-nas-swarm/config/homarr/configs:/app/data/configs
-     - /nfs-nas-swarm/data/homarr/icons:/app/public/icons
-    networks:
-     - internal
-     - traefik-public
-     - autopirate_autopirate-network
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.routers.homarr-http.rule: Host(`vnerd.nl`)
-        traefik.http.routers.homarr-http.entrypoints: http
-        traefik.http.routers.homarr-https.tls.certresolver: le
-        traefik.http.services.homarr.loadbalancer.server.port: '7575'
-        traefik.http.routers.homarr-https.rule: Host(`vnerd.nl`)
-        traefik.http.routers.homarr-http.middlewares: https-redirect
-        traefik.constraint-label: traefik-public
-        traefik.http.routers.homarr-https.tls: 'true'
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.homarr-https.entrypoints: https
-      placement:
-        constraints:
-         - node.labels.Arch!=i686
-networks:
-  autopirate_autopirate-network:
-    external: true
-  internal:
-    driver: overlay
-  traefik-public:
-    external: true
-
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/homaar.yml"
 ```
+
 ## Notes
 To connect locally to the Arr services you need to add the autopirate-network later on. 

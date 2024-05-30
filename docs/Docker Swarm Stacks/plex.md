@@ -53,53 +53,9 @@ Claim a token and insert that into an environment variable like this:
 ```
 
 ## Docker swarm file
-```yaml
-version: '3.3'
-services:
-  plex:
-    image: linuxserver/plex:latest
-    environment:
-      PGID: '0'
-      PLEX_CLAIM: claim-xxxxxxxxxxxxxxxxxxx
-      PUID: '0'
-      container_name: plex
-    ports:
-     - 32400:32400
-    volumes:
-     - plex-config-volume:/config
-     - /nfs-nas-swarm/data/autopirate/data:/media
-     - /nfs-nas-swarm/data/media/Music:/music
-    networks:
-     - internal
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.routers.plex-https.rule: Host(`plex.vnerd.nl`)
-        traefik.http.routers.plex-http.middlewares: https-redirect
-        traefik.http.routers.plex-https.tls.certresolver: le
-        traefik.http.services.plex.loadbalancer.server.port: '32400'
-        traefik.http.routers.plex-http.entrypoints: http
-        traefik.http.routers.plex-https.tls: 'true'
-        traefik.http.routers.plex-https.entrypoints: https
-        traefik.constraint-label: traefik-public
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.plex-http.rule: Host(`plex.vnerd.nl`)
-      placement:
-        constraints:
-         - node.labels.Arch!=i686
-         - node.hostname == pc03.karam.lab
-networks:
-  internal:
-    driver: overlay
-  traefik-public:
-    external: true
-volumes:
-  plex-config-volume:
-    driver: local
-
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/plex.yml"
 ```
+
 ## Notes
 
