@@ -1,8 +1,10 @@
-site_name: Home Lab Docs
+site_name: vNerd Docs
 site_url: https://www.docs.vnerd.nl/
 site_author: Karam Ajaj
-#repo_url: https://github.com/squidfunk/mkdocs-material
-#edit_uri: edit/main/docs/
+
+repo_url: https://github.com/karam-ajaj/vnerd-docs
+repo_name: karam-ajaj/vnerd-docs
+# edit_uri: edit/master/docs/
 
 # Theme Configuration
 theme:
@@ -32,6 +34,7 @@ theme:
   language: en
   font:
     text: Roboto
+    code: Roboto Mono
   features:
     # - navigation.instant
     # - navigation.instant.prefetch
@@ -68,6 +71,7 @@ plugins:
   #- mkdocs-blogging-plugin
   #- fontawesome-markdown
   # - projects
+  # - optimize
   # - offline
 
   # https://github.com/squidfunk/mkdocs-material/discussions/3458
@@ -88,13 +92,7 @@ markdown_extensions:
   #       - includes/abbreviations.md
   - pymdownx.arithmatex:
       generic: true
-
-# repo_url: https://github.com/karam-ajaj/portainer-compose
-# repo_name: portainer-compose
-repo_url: https://github.com/karam-ajaj/vnerd-docs
-repo_name: karam-ajaj/vnerd-docs
-# edit_uri: edit/master/docs/
-
+  - pymdownx.betterem
 
 extra:
   generator: false
@@ -109,5 +107,8 @@ extra:
     #   link:
     - icon: fontawesome/brands/discord
       link: https://discordapp.com/users/1001115113245388831
+
+extra_css:
+  - stylesheets/extra.css
 
 copyright: Copyright &copy; Karam Ajaj
