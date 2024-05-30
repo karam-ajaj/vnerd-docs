@@ -41,7 +41,7 @@ No special requirments
 
 ## Docker swarm file
 ``` yaml linenums="1" 
---8<-- "/docs/github-repos/portainer-compose/stacks/homaar.yml"
+--8<-- "/docs/github-repos/portainer-compose/stacks/homarr.yml"
 ```
 
 ## Notes
