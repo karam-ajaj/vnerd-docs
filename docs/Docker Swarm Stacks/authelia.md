@@ -1,9 +1,26 @@
 ---
 comments: true
 ---
+
 ``` title="authelia"
---8<-- "../../github-repos/portainer-compose/stacks/authelia.yml"
+--8<-- "/github-repos/portainer-compose/stacks/authelia.yml"
 ```
+
+``` title=".browserslistrc"
+--8<-- ".browserslistrc"
+```
+
+Read more [here](/docs/github-repos/portainer-compose/stacks/authelia.yml) # It works!
+
+Read more [here](/hardware/hardware) # It works!
+
+/docs/docs/hardware/hardware.md
+/docs/docs/hardware/hardware
+/docs/hardware/hardware.md
+/docs/hardware/hardware
+/hardware/hardware.md
+/hardware/hardware
+
 # Authelia
 
 Open-Source Authentication and Authorization Server
@@ -135,7 +152,7 @@ grep -Eo '"https://.*" ' ./authelia/notification.txt.
 ```
 
 ## docker swarm file
-```yaml
+```yaml linenums="1"
 services:
   authelia:
     image: authelia/authelia:latest
