@@ -1,10 +1,22 @@
-/* :root {
+:root {
   --md-tooltip-width: 6000px;
   --md-code-bg-color: red;
 }
 :root > * {
-  --md-code-hl-string-color: #0FF1CE;
+  /* --md-code-hl-number-color: #3794ff; */
+  /* --md-code-hl-special-color: #3794ff; */
+  /* --md-code-hl-function-color: #3794ff; */
+  /* --md-code-hl-constant-color: #3794ff; */
+  /* --md-code-hl-keyword-color: #3794ff; */
+  --md-code-hl-string-color: #a5d6ff;
+  /* --md-code-hl-name-color: #3794ff; */
+  /* --md-code-hl-operator-color: yellow; */
+  /* --md-code-hl-punctuation-color: yellow; */
+  --md-code-hl-comment-color: green;
+  /* --md-code-hl-generic-color: black; */
+  --md-code-hl-variable-color: #7ee787;
 }
-.highlight .sb {
-  color: #0FF1CE;
+
+/* .highlight .sb {
+  color: #f10f0f;
 } */

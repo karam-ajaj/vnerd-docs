@@ -9,7 +9,16 @@ repo_name: karam-ajaj/vnerd-docs
 # Theme Configuration
 theme:
   name: 'material'
+  logo: assets/images/vnerd-logo-icon.png
+  custom_dir: overrides
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
+    - primary: black
+    - accent: indigo
+    # primary: indigo
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -29,12 +38,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-  logo: assets/images/vnerd-logo-icon.png
-  custom_dir: overrides
-  language: en
-  font:
-    text: Roboto
-    code: Roboto Mono
   features:
     # - navigation.instant
     # - navigation.instant.prefetch
@@ -78,6 +81,7 @@ plugins:
   # - redirects:
   #   redirect_maps:
   #     get: https://github.com/karam-ajaj/portainer-compose/blob/main/README.md
+
 
 markdown_extensions:
   - pymdownx.highlight:

@@ -41,7 +41,7 @@ Welcome to the world of Authelia, where security meets simplicity!
 
 ## Deployment
 
-Edit configuration files in /nfs-nas-swarm/configE/authelia
+Edit configuration files in /nfs-nas-swarm/config/authelia
 ```yaml
 ###############################################################
 #                   Authelia configuration                    #
