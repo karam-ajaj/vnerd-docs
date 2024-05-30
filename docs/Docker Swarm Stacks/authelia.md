@@ -2,25 +2,6 @@
 comments: true
 ---
 
-``` title="authelia"
---8<-- "/github-repos/portainer-compose/stacks/authelia.yml"
-```
-
-``` title=".browserslistrc"
---8<-- ".browserslistrc"
-```
-
-Read more [here](/docs/github-repos/portainer-compose/stacks/authelia.yml) # It works!
-
-Read more [here](/hardware/hardware) # It works!
-
-/docs/docs/hardware/hardware.md
-/docs/docs/hardware/hardware
-/docs/hardware/hardware.md
-/docs/hardware/hardware
-/hardware/hardware.md
-/hardware/hardware
-
 # Authelia
 
 Open-Source Authentication and Authorization Server
@@ -152,78 +133,9 @@ grep -Eo '"https://.*" ' ./authelia/notification.txt.
 ```
 
 ## docker swarm file
-```yaml linenums="1"
-services:
-  authelia:
-    image: authelia/authelia:latest
-    volumes:
-     - /nfs-nas-swarm/config/authelia:/config
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.routers.authelia-https.tls: 'true'
-        traefik.http.routers.authelia-https.tls.certresolver: le
-        traefik.http.services.authelia.loadbalancer.server.port: '9091'
-        traefik.http.routers.authelia-http.middlewares: https-redirect
-        traefik.http.middlewares.authelia.forwardAuth.address: http://authelia:9091/api/verify?rd=https%3A%2F%2Fauthelia.vnerd.nl%2F
-        traefik.http.routers.authelia-https.rule: Host(`authelia.vnerd.nl`)
-        traefik.http.routers.authelia-http.rule: Host(`authelia.vnerd.nl`)
-        traefik.http.routers.authelia-https.entryPoints: https
-        traefik.constraint-label: traefik-public
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.authelia-http.entryPoints: http
-      placement:
-        constraints:
-         - node.labels.Arch != i686
-  whoami-1fa:
-    image: containous/whoami:latest
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      replicas: 0
-      labels:
-        traefik.http.routers.whoami-authelia-1fa-https.rule: Host(`whoami-authelia-1fa.vnerd.nl`)
-        traefik.http.routers.whoami-authelia-1fa-http.entrypoints: http
-        traefik.http.routers.whoami-authelia-1fa-http.middlewares: authelia@docker
-        traefik.http.routers.whoami-authelia-1fa-https.entrypoints: https
-        traefik.http.routers.whoami-authelia-1fa-https.tls.certresolver: le
-        traefik.http.routers.whoami-authelia-1fa-https.tls: 'true'
-        traefik.constraint-label: traefik-public
-        traefik.http.routers.whoami-authelia-1fa-https.middlewares: authelia@docker
-        traefik.http.services.whoami-authelia-1fa.loadbalancer.server.port: '80'
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.whoami-authelia-1fa-http.rule: Host(`whoami-authelia-1fa.vnerd.nl`)
-  whoami-2fa:
-    image: containous/whoami:latest
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      replicas: 0
-      labels:
-        traefik.http.routers.whoami-authelia-2fa-http.entrypoints: http
-        traefik.http.routers.whoami-authelia-2fa-https.middlewares: authelia@docker
-        traefik.http.routers.whoami-authelia-2fa-http.rule: Host(`whoami-authelia-2fa.vnerd.nl`)
-        traefik.http.routers.whoami-authelia-2fa-https.tls.certresolver: le
-        traefik.http.routers.whoami-authelia-2fa-https.tls: 'true'
-        traefik.http.routers.whoami-authelia-2fa-http.middlewares: authelia@docker
-        traefik.constraint-label: traefik-public
-        traefik.http.services.whoami-authelia-2fa.loadbalancer.server.port: '80'
-        traefik.http.routers.whoami-authelia-2fa-https.entrypoints: https
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.whoami-authelia-2fa-https.rule: Host(`whoami-authelia-2fa.vnerd.nl`)
-networks:
-  traefik-public:
-    external: true
+
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/authelia.yml"
 ```
 
 ## Notes

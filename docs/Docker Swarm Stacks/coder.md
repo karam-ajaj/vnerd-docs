@@ -40,50 +40,9 @@ Experience the future of collaborative and cloud-native development with Coderâ€
 No Special requirments
 
 ## Docker swarm file
-```yaml
-version: '3.3'
-services:
-  coder:
-    image: lscr.io/linuxserver/code-server:latest
-    environment:
-      PASSWORD: password
-      PGID: '911'
-      PUID: '911'
-      TZ: Europe/Amsterdam
-      DEFAULT_WORKSPACE: '/home/coder/nfs-nas-swarm/config'
-    volumes:
-     - /nfs-nas-swarm/config:/home/coder/nfs-nas-swarm/config
-     - /nfs-nas-swarm/config/coder:/config
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      replicas: 0
-      labels:
-        sablier.enable: 'true'
-        traefik.http.routers.coder-https.entrypoints: https
-        traefik.http.routers.coder-https.middlewares: authelia@docker, coder-sablier@file
-        traefik.http.routers.coder-http.middlewares: https-redirect
-        traefik.http.routers.coder-https.rule: Host(`coder.vnerd.nl`)
-        traefik.http.routers.coder-https.tls.certresolver: le
-        traefik.http.routers.coder-https.tls: 'true'
-        traefik.http.routers.coder-http.entrypoints: http
-        sablier.group: coder
-        traefik.constraint-label: traefik-public
-        traefik.docker.lbswarm: 'true'
-        traefik.http.services.coder.loadbalancer.server.port: '8443'
-        traefik.http.routers.coder-http.rule: Host(`coder.vnerd.nl`)
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-      placement:
-        constraints:
-         - node.labels.Arch!=i686
-networks:
-  traefik-public:
-    external: true
-
-
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/authelia.yml"
 ```
+
 ## Notes
 
