@@ -155,56 +155,8 @@ networks:
 
 Edit the deployment parameters, so the stack should be like this 
 
-```yaml
-services:
-  traefik:
-    image: traefik:latest
-    command:
-     - --providers.docker
-     - --providers.docker.swarmmode
-     - --entrypoints.http.address=:80
-     - --entrypoints.https.address=:443
-     - --certificatesresolvers.le.acme.email=karam.ajaj@hotmail.com
-     - --certificatesresolvers.le.acme.storage=/certificates/acme.json
-     - --certificatesresolvers.le.acme.tlschallenge=true
-     - --accesslog
-     - --log
-     - --api
-    ports:
-     - 80:80
-     - 443:443
-    volumes:
-     - /nfs-nas-swarm/config/trafiek/certificates:/certificates
-     - /nfs-nas-swarm/config/trafiek/dynamic-config:/config
-     - /nfs-nas-swarm/config/trafiek/static-config:/etc/traefik
-     - /var/run/docker.sock:/var/run/docker.sock:ro
-    networks:
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.middlewares.https-redirect.redirectscheme.scheme: https
-        traefik.http.middlewares.admin-auth.basicauth.users: admin:.
-        traefik.http.routers.traefik-public-https.rule: Host(`traefik.vnerd.nl`)
-        traefik.http.routers.traefik-public-https.tls: 'true'
-        traefik.http.services.traefik-public.loadbalancer.server.port: '8080'
-        traefik.http.routers.traefik-public-https.service: api@internal
-        traefik.http.routers.traefik-public-http.middlewares: https-redirect
-        traefik.http.routers.traefik-public-http.entrypoints: http
-        traefik.http.routers.traefik-public-https.entrypoints: https
-        traefik.http.middlewares.https-redirect.redirectscheme.permanent: 'true'
-        traefik.constraint-label: traefik-public
-        traefik.http.routers.traefik-public-http.rule: Host(`traefik.vnerd.nl`)
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-        traefik.http.routers.traefik-public-https.tls.certresolver: le
-      placement:
-        constraints:
-         - node.labels.traefik-public.traefik-public-certificates == true
-networks:
-  traefik-public:
-    external: true
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/traefik.yml"
 ```
 
 ## Docker swarm file
