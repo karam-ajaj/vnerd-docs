@@ -133,10 +133,7 @@ grep -Eo '"https://.*" ' ./authelia/notification.txt.
 ```
 
 ## docker swarm file
----
-links:
-  - /docs/github-repos/portainer-compose/stacks/authelia.yml
----
+
 
 ``` yaml linenums="1" 
 --8<-- "/docs/github-repos/portainer-compose/stacks/authelia.yml"

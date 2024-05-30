@@ -1,0 +1,10 @@
+/* :root {
+  --md-tooltip-width: 6000px;
+  --md-code-bg-color: red;
+}
+:root > * {
+  --md-code-hl-string-color: #0FF1CE;
+}
+.highlight .sb {
+  color: #0FF1CE;
+} */
