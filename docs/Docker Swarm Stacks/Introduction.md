@@ -4,6 +4,8 @@ comments: true
 
 This section contains the required yaml files and the deployment procedure to create the services in a docker swarm cluster
 
+[GitHub Repository](https://github.com/karam-ajaj/portainer-compose)
+
 ## Reference
 Every article contains the following sections:
 
@@ -16,3 +18,4 @@ Every article contains the following sections:
 4. Notes --> additional notes
 
 First you need to deploy the Swarmpit stack (management service in this case) and Traefik stack (proxy service), then you can go further with deploying whatever service you desire.
+

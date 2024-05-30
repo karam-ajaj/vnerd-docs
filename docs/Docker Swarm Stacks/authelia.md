@@ -132,7 +132,7 @@ Upon registering, you can grab this link easily by running the following command
 grep -Eo '"https://.*" ' ./authelia/notification.txt.
 ```
 
-[## docker swarm file](https://github.com/karam-ajaj/portainer-compose/blob/main/stacks/authelia.yml)
+## docker swarm file
 
 ``` yaml linenums="1" 
 --8<-- "/docs/github-repos/portainer-compose/stacks/authelia.yml"
