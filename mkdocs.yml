@@ -9,7 +9,7 @@ repo_name: karam-ajaj/vnerd-docs
 # Theme Configuration
 theme:
   name: 'material'
-  logo: assets/images/vnerd-logo-icon.png
+  logo: assets/logos/vnerd-logo-white.png
   custom_dir: overrides
   language: en
   font:
