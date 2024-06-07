@@ -16,8 +16,9 @@ write a short introduction about {} in markdown language
 No Special requirments
 
 ## Docker swarm file
-```yaml
-
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/*.yml"
 ```
+
 ## Notes
 
