@@ -1,37 +1,27 @@
 # PXE/TFTP
 
 
-# PXE alpine boot
+## Setting up server
+we need to configure the PXE/TFTP server first
 
-#### references:
-
-*   [https://blog.haschek.at/2019/build-your-own-datacenter-with-pxe-and-alpine.html](https://blog.haschek.at/2019/build-your-own-datacenter-with-pxe-and-alpine.html)
-    
-*   [https://wiki.alpinelinux.org/wiki/Alpine\_local\_backup#Checking\_what\_will\_be\_added\_to\_your\_apkovl](https://wiki.alpinelinux.org/wiki/Alpine_local_backup#Checking_what_will_be_added_to_your_apkovl)
-    
-*   [https://www.server-world.info/en/note?os=Debian\_11&p=dhcp&f=1](https://www.server-world.info/en/note?os=Debian_11&p=dhcp&f=1)
-    
-*   [https://wiki.debian.org/PXEBootInstall](https://wiki.debian.org/PXEBootInstall)
-    
-*   [https://alpinelinux.org/downloads/](https://alpinelinux.org/downloads/)
-    
-*   [https://nl.alpinelinux.org/alpine/v3.17/main/](https://nl.alpinelinux.org/alpine/v3.17/main/)
-    
-*   [https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/](https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/)
-    
-*   [https://dev.alpinelinux.org/~clandmeter/other/forum.alpinelinux.org/forum/general-discussion/nfs-mount-fails-boot.html](https://dev.alpinelinux.org/~clandmeter/other/forum.alpinelinux.org/forum/general-discussion/nfs-mount-fails-boot.html)
-    
-
-# Setting up server:
-
-### DHCP
+## DHCP
+- install dhcp server service wit this simple command
 
 ```
 apt -y install isc-dhcp-server
 ```
 
+- there are two location to store the dhcp server configurations:
+
 ```
-root@pc01:~# cat /etc/default/isc-dhcp-server
+/etc/default/isc-dhcp-server
+/etc/dhcp/dhcpd.conf
+```
+
+- the contents of these two files are described here:
+
+```
+cat /etc/default/isc-dhcp-server
 # Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
 
 # Path to dhcpd's config file (default: /etc/dhcp/dhcpd.conf).
@@ -50,11 +40,10 @@ DHCPDv4_CONF=/etc/dhcp/dhcpd.conf
 #       Separate multiple interfaces with spaces, e.g. "eth0 eth1".
 INTERFACESv4="eno1"
 #INTERFACESv6=""
-
 ```
 
 ```
-root@pc01:~# cat /etc/dhcp/dhcpd.conf
+cat /etc/dhcp/dhcpd.conf
 default-lease-time 600;
 max-lease-time 7200;
 
@@ -84,19 +73,8 @@ subnet 10.10.10.0 netmask 255.255.255.0 {
 }
 ```
 
-### PXE
-
-```
-apt-get install tftpd-hpa nfs-kernel-server lighttpd
-mkdir -p /srv/pxe/configs
-mkdir -p /srv/pxe/data
-chmod -R 777 /srv/pxe
-ssh-keygen
-cp ~/.ssh/id_rsa.pub /srv/pxe/sshkeys.pub
-```
-
-### NFS:
-
+## NFS
+configure NFS settings and allow all devices on the local network to access the shared folder
 ```
 echo "Setting up NFS for local network"
 echo "/srv/pxe 10.10.10.0/255.255.255.0(rw,sync,no_root_squash,no_subtree_check)" >> /etc/exports
@@ -104,13 +82,13 @@ echo "Restarting NFS service"
 exportfs -ra 
 ```
 
-### lighttpd:
-
+## lighttpd
+restart lighttpd service
 ```
 /etc/init.d/lighttpd restart
 ```
 
-configs:
+lighttpd configuration should be like this:
 
 ```
 root@pc01:~# cat /etc/lighttpd/lighttpd.conf
@@ -170,7 +148,19 @@ server.modules += (
 )
 ```
 
-PXE config: (on port 8765 because traefik uses port 80)
+## PXE
+apply the following commands. This will install the required services, create some directories to store configurations etc..
+```
+apt-get install tftpd-hpa nfs-kernel-server lighttpd
+mkdir -p /srv/pxe/configs
+mkdir -p /srv/pxe/data
+chmod -R 777 /srv/pxe
+ssh-keygen
+cp ~/.ssh/id_rsa.pub /srv/pxe/sshkeys.pub
+```
+
+### 1. PXE config
+in my lab I had to use a different port (port 8765 because traefik uses port 80)
 
 ```
 # install requirements
@@ -193,18 +183,18 @@ make bin/undionly.kpxe EMBED=boot.ipxe
 cp bin/undionly.kpxe /srv/tftp/gpxe.kpxe
 ```
 
-### PXE script:
+### 2. PXE script
 
 ```
-root@pc01:~# cat /srv/pxe/gpxe-script
+cat /srv/pxe/gpxe-script
 #!gpxe
 kernel http://10.10.10.220:8765/boot/vmlinuz-lts apkovl=http://10.10.10.220:8765/configs/${net0/mac}.tar.gz ip=dhcp ssh_key=http://10.10.10.220:8765/sshkeys.pub modloop=http://10.10.10.220:8765/boot/modloop-lts modules=loop,squashfs,sd-mod,usb-storage alpine_dev=nfs:10.10.10.220:/srv/pxe alpine_repo=http://nl.alpinelinux.org/alpine/v3.17/main/
 initrd http://10.10.10.220:8765/boot/initramfs-lts
 boot
 ```
 
-### test tftp:
-
+### 3. test tftp
+from another host on the same network verify tftp is working
 ```
 apt install tftp-hpa
 cd /tmp
@@ -216,7 +206,7 @@ tftp> quit
 (nothing, they are identical)
 ```
 
-## get the iso:
+### 4. get the iso
 
 ```
 cd /srv/pxe/data/
@@ -238,19 +228,19 @@ mv /srv/pxe/modloop-lts /srv/pxe/boot/
 chmod 644 /srv/pxe/boot/initramfs-lts
 ```
 
-IMPORTANT: restart all services
+> **_NOTE:_** IMPORTANT: restart all services
 
 ```
 systemctl restart isc-dhcp-server.service && /etc/init.d/lighttpd restart && exportfs -ra && systemctl restart tftpd-hpa && systemctl restart nfs-kernel-server
 ```
 
-### find the new IP:
+### 5. find the new IP
 
 ```
 journalctl -fu isc-dhcp-server
 ```
 
-## create default config
+### 6. create default config
 
 login on the booted client and do the following
 
@@ -321,14 +311,17 @@ save
 reboot
 ```
 
+
+#### different approach
+
+you can copy the file 00:00:00:00:00:00.tar.gz to a new file with the mac address as the name in the same location.
+then you only have to apply these commands
 ```
-# you can copy the file 00:00:00:00:00:00.tar.gz to a new file with the mac address as the name in the same location
-# then you only have to apply these commands
 setup-hostname
 setup-disk
 ```
 
-configure powerdns
+### 7. configure powerdns
 
 ```
 cat << 'EOF' > /etc/resolv.conf
@@ -338,7 +331,7 @@ nameserver 8.8.8.8
 EOF
 ```
 
-enable mic and speaker
+### enable mic and speaker
 
 [https://wiki.alpinelinux.org/wiki/ALSA](https://wiki.alpinelinux.org/wiki/ALSA)
 
@@ -354,7 +347,7 @@ save
 exit
 ```
 
-create static IP config:
+### 8. create static IP config:
 
 ```
 # cat /etc/dhcp/dhcpd.conf    
@@ -388,7 +381,7 @@ subnet 10.10.10.0 netmask 255.255.255.0 {
 
 ```
 
-### copy config to a new client:
+### 9. copy config to a new client
 
 ```
 ## change bios config to boot from network
@@ -420,3 +413,23 @@ mount -a && df -h
 save
 reboot
 ```
+
+
+## references
+
+*   [https://blog.haschek.at/2019/build-your-own-datacenter-with-pxe-and-alpine.html](https://blog.haschek.at/2019/build-your-own-datacenter-with-pxe-and-alpine.html)
+    
+*   [https://wiki.alpinelinux.org/wiki/Alpine\_local\_backup#Checking\_what\_will\_be\_added\_to\_your\_apkovl](https://wiki.alpinelinux.org/wiki/Alpine_local_backup#Checking_what_will_be_added_to_your_apkovl)
+    
+*   [https://www.server-world.info/en/note?os=Debian\_11&p=dhcp&f=1](https://www.server-world.info/en/note?os=Debian_11&p=dhcp&f=1)
+    
+*   [https://wiki.debian.org/PXEBootInstall](https://wiki.debian.org/PXEBootInstall)
+    
+*   [https://alpinelinux.org/downloads/](https://alpinelinux.org/downloads/)
+    
+*   [https://nl.alpinelinux.org/alpine/v3.17/main/](https://nl.alpinelinux.org/alpine/v3.17/main/)
+    
+*   [https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/](https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/)
+    
+*   [https://dev.alpinelinux.org/~clandmeter/other/forum.alpinelinux.org/forum/general-discussion/nfs-mount-fails-boot.html](https://dev.alpinelinux.org/~clandmeter/other/forum.alpinelinux.org/forum/general-discussion/nfs-mount-fails-boot.html)
+    
