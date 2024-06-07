@@ -17,7 +17,7 @@ No Special requirments
 
 ## Docker swarm file
 ``` yaml linenums="1" 
---8<-- "/docs/github-repos/portainer-compose/stacks/*.yml"
+--8<-- "/docs/github-repos/portainer-compose/stacks/swarmprom.yml"
 ```
 
 ## Notes

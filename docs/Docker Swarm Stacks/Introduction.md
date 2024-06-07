@@ -19,3 +19,7 @@ Every article contains the following sections:
 
 First you need to deploy the Swarmpit stack (management service in this case) and Traefik stack (proxy service), then you can go further with deploying whatever service you desire.
 
+> **_NOTE:_** The introduction for each section was written using ChatGPT using this simple request:
+``` 
+write a short introduction about {} in markdown language 
+```

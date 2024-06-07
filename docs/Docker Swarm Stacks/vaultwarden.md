@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Bitwarden
+# Vaultwarden
 
 Self-Hosted Password Manager
 
@@ -92,43 +92,10 @@ Create the following configuration files in the shared volume "config.json"
 
 
 ## Docker swarm file
-```yaml
-version: '3.3'
-services:
-  bitwarden:
-    image: vaultwarden/server:latest
-    environment:
-      SIGNUPS_ALLOWED: 'false'
-    volumes:
-     - /nfs-nas-swarm/data/bitwarden:/data/
-    networks:
-     - internal
-     - traefik-public
-    logging:
-      driver: json-file
-    deploy:
-      labels:
-        traefik.http.routers.bitwarden-http.middlewares: https-redirect
-        traefik.http.routers.bitwarden-https.entrypoints: https
-        traefik.http.routers.bitwarden-https.tls.certresolver: le
-        traefik.http.routers.bitwarden-https.rule: Host(`password.vnerd.nl`)
-        traefik.http.routers.bitwarden-http.entrypoints: http
-        traefik.http.routers.bitwarden-http.rule: Host(`password.vnerd.nl`)
-        traefik.constraint-label: traefik-public
-        traefik.http.routers.bitwarden-https.tls: 'true'
-        traefik.http.services.bitwarden.loadbalancer.server.port: '80'
-        traefik.docker.network: traefik-public
-        traefik.enable: 'true'
-      placement:
-        constraints:
-         - node.labels.Arch!=i686
-networks:
-  internal:
-    driver: overlay
-  traefik-public:
-    external: true
-
+``` yaml linenums="1" 
+--8<-- "/docs/github-repos/portainer-compose/stacks/vaultwarden.yml"
 ```
+
 ## Notes
 
 - SIGNUPS_ALLOWED should be false, otherwise other people can sign up.
