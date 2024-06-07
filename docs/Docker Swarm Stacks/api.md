@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Swagger
+# API's (Swagger)
 
 Simplifying API Development and Documentation
 
