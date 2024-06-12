@@ -6,6 +6,8 @@ comments: true
 
 Revolutionizing Development Environments
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Coder](https://coder.com/) is a cutting-edge platform that revolutionizes the way developers create, collaborate, and deploy applications. With a focus on simplicity and efficiency, Coder provides a cloud-based development environment that empowers teams to code securely and collaboratively from anywhere in the world.
 
 ## Key Features

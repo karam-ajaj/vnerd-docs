@@ -6,6 +6,8 @@ comments: true
 
 Open Source Remote Desktop Protocol (RDP) Client
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [rdesktop](https://www.rdesktop.org/) is an open-source client for the Remote Desktop Protocol (RDP), allowing users to connect to remote Windows desktops or servers from Unix-based operating systems, such as Linux and BSD. With its lightweight and efficient implementation, rdesktop provides a reliable and convenient solution for accessing remote Windows machines and applications over a network connection.
 
 ## Key Features

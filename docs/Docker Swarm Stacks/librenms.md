@@ -6,6 +6,8 @@ comments: true
 
 Open-Source Network Monitoring and Management
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [LibreNMS](https://www.librenms.org/) is a powerful and flexible open-source network monitoring and management platform designed to monitor network devices and servers in real-time. With its intuitive interface, extensive feature set, and active community support, LibreNMS provides a comprehensive solution for monitoring the health, performance, and availability of your network infrastructure.
 
 ## Key Features

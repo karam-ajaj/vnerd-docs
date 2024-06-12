@@ -6,6 +6,8 @@ comments: true
 
 Web Terminal
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Wetty](https://github.com/krishnasrinivas/wetty) is an open-source web-based terminal emulator that allows users to access a remote shell session via a web browser. It provides a convenient way to interact with remote servers and devices using a familiar terminal interface without the need for a dedicated SSH client.
 
 ## Key Features

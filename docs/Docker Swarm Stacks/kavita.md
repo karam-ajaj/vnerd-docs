@@ -6,6 +6,8 @@ comments: true
 
 Your Personal Reading Server
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Kavita](https://github.com/ankit-patil/kavita) is a fast, feature-rich, cross-platform reading server built with the goal of being a full solution for all your reading needs. Whether you're an avid reader, a collector of digital books, or simply want to share your reading collection with friends and family, Kavita provides a convenient and customizable platform for hosting and accessing your reading materials.
 
 ## Key Features

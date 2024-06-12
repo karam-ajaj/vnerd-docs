@@ -6,6 +6,8 @@ comments: true
 
 Web-Based Database Management
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [CloudBeaver](https://github.com/dbeaver/cloudbeaver) is a powerful, open-source web-based database management tool that provides a convenient way to manage databases from any browser. Developed by the team behind DBeaver, CloudBeaver combines robust database management capabilities with the flexibility and accessibility of a web application, making it an ideal solution for both individual developers and enterprise teams.
 
 ## Key Features

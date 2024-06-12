@@ -6,6 +6,8 @@ comments: true
 
 High-Performance Web Server
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [NGINX](https://nginx.org/) stands as a versatile, high-performance web server and reverse proxy server, renowned for its efficiency, scalability, and reliability. Originally developed to address the challenges of handling concurrent connections and delivering static content, NGINX has evolved into a powerful tool for optimizing web server performance and facilitating seamless application delivery.
 
 ## Key Features

@@ -6,6 +6,8 @@ comments: true
 
 High-Performance Web Server and Reverse Proxy
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Nginx](https://www.nginx.com/) is a high-performance web server, reverse proxy, and load balancer known for its speed, scalability, and reliability. Widely used by web developers and system administrators, Nginx is capable of handling large volumes of concurrent connections while consuming minimal system resources. It excels in serving static content, handling dynamic requests, and efficiently distributing incoming traffic across multiple servers.
 
 ## Key Features

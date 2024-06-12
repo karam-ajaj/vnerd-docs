@@ -6,6 +6,8 @@ comments: true
 
 Open-Source 3D CAD Modeling Software
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [FreeCAD](https://www.freecadweb.org/) is a powerful and versatile open-source 3D CAD modeling software designed for engineers, architects, designers, and hobbyists. With its extensive feature set and user-friendly interface, FreeCAD offers a flexible and accessible platform for creating precise and complex 3D models for a wide range of applications.
 
 ## Key Features

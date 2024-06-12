@@ -99,6 +99,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
+  - attr_list
+  - md_in_html
   
 
 extra:

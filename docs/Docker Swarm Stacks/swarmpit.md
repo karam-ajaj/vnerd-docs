@@ -6,6 +6,8 @@ comments: true
 
 Simplifying Docker Swarm Management
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Swarmpit](https://swarmpit.io/) emerges as a user-friendly web-based interface for managing Docker Swarm clusters with unparalleled ease. This open-source solution is designed to simplify the orchestration, monitoring, and deployment of applications within a Docker Swarm environment.
 
 ## Key Features

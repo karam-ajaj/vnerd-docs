@@ -6,6 +6,8 @@ comments: true
 
 PostgreSQL Administration and Development Platform
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [pgAdmin](https://www.pgadmin.org/) is a comprehensive open-source administration and development platform for PostgreSQL, the powerful open-source relational database system. With its intuitive interface, rich feature set, and cross-platform support, pgAdmin provides database administrators, developers, and analysts with a powerful toolset for managing, querying, and visualizing PostgreSQL databases.
 
 ## Key Features

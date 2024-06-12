@@ -6,6 +6,8 @@ comments: true
 
 Self-Hosted Password Manager
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [**Vaultwarden**](https://github.com/dani-garcia/vaultwarden) is a self-hosted password manager that provides a secure and private solution for managing your sensitive credentials. Born from the open-source community, Vaultwarden is a fork of the renowned Bitwarden RS, ensuring users have full control over their password data while maintaining the familiar and intuitive Bitwarden experience.
 
 ## Key Features

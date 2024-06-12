@@ -7,6 +7,8 @@ comments: true
 
 The Modern, Dynamic Reverse Proxy
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Traefik](https://traefik.io/) stands as a dynamic and modern reverse proxy and load balancer designed for effortlessly managing microservices architectures, container orchestration systems, and traditional web applications. Renowned for its simplicity, flexibility, and native integration with container orchestrators, Traefik is a go-to solution for routing and securing web traffic.
 
 ## Key Features

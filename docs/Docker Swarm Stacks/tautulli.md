@@ -6,6 +6,8 @@ comments: true
 
 Monitoring and Analytics for Plex Media Server
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Tautulli](https://tautulli.com/) is a powerful open-source monitoring and analytics platform designed for Plex Media Server users. With Tautulli, Plex enthusiasts can gain insights into their media consumption habits, track server activity, and analyze usage patterns, enabling them to optimize their Plex experience and enhance their media streaming environment.
 
 ## Key Features

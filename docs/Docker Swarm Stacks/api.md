@@ -6,6 +6,8 @@ comments: true
 
 Simplifying API Development and Documentation
 
+![api diagram](/assets/diagrams/api.png){ loading=lazy }
+
 [Swagger](https://swagger.io/) is an open-source framework designed to aid in the development, design, documentation, and consumption of RESTful web services. By providing a suite of tools and an established specification, Swagger streamlines the creation and management of APIs, making it easier for developers to build and maintain robust and well-documented APIs.
 
 ## Key Features

@@ -6,6 +6,8 @@ comments: true
 
 Scalable Time-Series Database
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [InfluxDB](https://www.influxdata.com/products/influxdb-overview/) is an open-source time-series database designed to handle high write and query loads, making it ideal for storing and analyzing time-series data from various sources such as sensors, application metrics, and IoT devices. With its powerful query language, scalable architecture, and integrations with popular data visualization tools, InfluxDB enables users to gain valuable insights into their time-series data.
 
 ## Key Features

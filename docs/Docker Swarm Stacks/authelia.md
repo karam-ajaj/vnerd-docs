@@ -6,6 +6,8 @@ comments: true
 
 Open-Source Authentication and Authorization Server
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 Authelia, an open-source authentication and authorization server, is designed to fortify the security of web applications and services. With a focus on simplicity and extensibility, Authelia serves as a robust solution for implementing single sign-on (SSO), two-factor authentication (2FA), and fine-grained access control policies.
 
 ## Key Features

@@ -6,6 +6,8 @@ comments: true
 
 Your Personal Audiobook Library
 
+![audiobookshelf diagram](/assets/diagrams/audiobookshelf.png){ loading=lazy }
+
 [Audiobookshelf](https://github.com/advplyr/audiobookshelf) is an open-source, self-hosted application designed to organize, stream, and manage your audiobook collection. With a focus on ease of use and accessibility, Audiobookshelf provides a seamless listening experience, allowing you to enjoy your audiobooks from anywhere.
 
 ## Key Features

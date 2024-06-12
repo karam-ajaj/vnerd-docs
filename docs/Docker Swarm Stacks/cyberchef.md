@@ -6,6 +6,8 @@ comments: true
 
 The Cyber Swiss Army Knife
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [CyberChef](https://gchq.github.io/CyberChef/) is a powerful and intuitive web-based tool designed to perform a wide range of data processing and analysis tasks. Often referred to as the "Cyber Swiss Army Knife," CyberChef allows users to manipulate data through an extensive collection of operations, all within a user-friendly drag-and-drop interface. Developed by GCHQ, CyberChef is invaluable for cybersecurity professionals, developers, and data analysts.
 
 ## Key Features

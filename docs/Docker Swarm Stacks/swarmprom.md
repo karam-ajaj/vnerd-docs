@@ -6,6 +6,8 @@ comments: true
 
 Monitoring and Alerting for Docker Swarm Clusters
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Swarmprom](https://github.com/stefanprodan/swarmprom) is an open-source monitoring and alerting solution designed specifically for Docker Swarm clusters. Built on top of Prometheus, Grafana, and a set of Docker-friendly exporters, Swarmprom provides comprehensive insights into the performance, health, and status of Docker Swarm services and containers, enabling operators to monitor, visualize, and troubleshoot their containerized infrastructure effectively.
 
 ## Key Features

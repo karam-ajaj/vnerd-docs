@@ -6,6 +6,7 @@ comments: true
 
 Transform Your Media Experience
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
 
 [Plex](https://www.plex.tv/) is a powerful and versatile media server solution that revolutionizes the way you consume and organize your media content. With its user-friendly interface and robust features, Plex transforms your device into a personal streaming service, providing access to your movies, TV shows, music, photos, and more, anytime, anywhere.
 

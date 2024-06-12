@@ -6,6 +6,8 @@ comments: true
 
 Real-Time Server Monitoring Dashboard
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [Dashdot](https://github.com/MauriceNino/dashdot) is an elegant and customizable web-based dashboard designed for real-time monitoring of your server's health and performance. With its modern and intuitive interface, Dashdot provides key insights into your server's status, helping you keep track of essential metrics and ensure optimal performance.
 
 ## Key Features

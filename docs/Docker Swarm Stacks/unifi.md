@@ -6,6 +6,8 @@ comments: true
 
 Integrated Network Management System
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [UniFi](https://www.ui.com/software/) is an integrated network management system developed by Ubiquiti Networks. It provides a comprehensive suite of networking solutions, including wireless access points, switches, routers, and security gateways, designed to deliver reliable, high-performance connectivity for homes, businesses, and enterprises.
 
 ## Key Features

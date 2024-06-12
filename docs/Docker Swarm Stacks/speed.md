@@ -6,6 +6,8 @@ comments: true
 
 Self-Hosted Internet Performance Tracking
 
+![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+
 [LinuxServer/Speedtest-Tracker](https://github.com/linuxserver/speedtest-tracker) is a self-hosted internet performance tracking application that allows users to monitor their internet connection's speed and performance. Powered by Ookla's Speedtest service, Speedtest-Tracker automates speed test checks at regular intervals, providing users with insights into their network's download and upload speeds, latency, and packet loss over time.
 
 ## Key Features
