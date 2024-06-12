@@ -1,0 +1,37 @@
+version: '3.3'
+services:
+  wizarr:
+    image: ghcr.io/wizarrrr/wizarr:latest
+    environment:
+      PGID: '911'
+      PUID: '911'
+      TZ: Europe/Amsterdam
+    volumes:
+     - /nfs-nas-swarm/data/wizarr:/data/database
+    networks:
+     - traefik-public
+     - internal
+    logging:
+      driver: json-file
+    deploy:
+      labels:
+        traefik.http.routers.wizarr-https.entrypoints: https
+        traefik.http.routers.wizarr-https.rule: Host(`wizarr.vnerd.nl`)
+        traefik.http.routers.wizarr-http.entrypoints: http
+        traefik.http.routers.wizarr-https.tls.certresolver: le
+        traefik.http.routers.wizarr-http.middlewares: https-redirect
+        traefik.constraint-label: traefik-public
+        traefik.http.routers.wizarr-http.rule: Host(`wizarr.vnerd.nl`)
+        traefik.http.services.wizarr.loadbalancer.server.port: '5690'
+        traefik.http.routers.wizarr-https.tls: 'true'
+        traefik.docker.network: traefik-public
+        traefik.enable: 'true'
+      placement:
+        constraints:
+         - node.labels.Arch!=i686
+         - node.labels.worker==enabled
+networks:
+  internal:
+    driver: overlay
+  traefik-public:
+    external: true

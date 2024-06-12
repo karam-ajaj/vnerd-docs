@@ -4,6 +4,8 @@ comments: true
 
 Your Comprehensive Resource Hub / All-in-One Self-Hosted Media Stack
 
+![media_services diagram](/assets/diagrams/media_services.png){ loading=lazy }
+
 ## What is Servarr?
 
 Servarr represents a family of open-source applications dedicated to automating and enhancing the management of media content, spanning movies, TV shows, music, and literature. Whether you're seeking an automated movie collection with Radarr, a TV show organizer with Sonarr, a music library manager with Lidarr, or a literature catalog with Readarr, Servarr has you covered.
