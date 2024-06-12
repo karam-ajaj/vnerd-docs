@@ -6,7 +6,7 @@ comments: true
 
 Simplified Container Management
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![portainer diagram](/assets/diagrams/portainer.png){ loading=lazy }
 
 [Portainer](https://www.portainer.io/) is an open-source container management platform designed to simplify the deployment, management, and monitoring of containerized applications and environments. With its intuitive interface, rich feature set, and support for multiple container runtimes, Portainer provides users with a powerful toolset for managing containerized workloads across various deployment scenarios.
 

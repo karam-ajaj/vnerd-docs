@@ -6,7 +6,7 @@ comments: true
 
 Network Latency Monitoring Tool
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![smokeping diagram](/assets/diagrams/smokeping.png){ loading=lazy }
 
 [SmokePing](https://oss.oetiker.ch/smokeping/) is an open-source network latency monitoring tool designed to measure and visualize the latency and packet loss of network connections in real-time. Developed by Tobi Oetiker, the creator of RRDtool, SmokePing provides administrators with insights into network performance, helping to identify and troubleshoot connectivity issues, packet loss, and latency spikes across diverse network environments.
 

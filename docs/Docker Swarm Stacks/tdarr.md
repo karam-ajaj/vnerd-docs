@@ -6,7 +6,7 @@ comments: true
 
 Media File Management and Encoding Automation
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![tdarr diagram](/assets/diagrams/tdarr.png){ loading=lazy }
 
 [TDarr](https://github.com/HaveAGitGat/Tdarr) is an open-source media file management and encoding automation tool designed to streamline the process of organizing, optimizing, and converting multimedia files. With TDarr, users can automate the transcoding and optimization of media files, ensuring compatibility, quality, and consistency across different devices and platforms.
 

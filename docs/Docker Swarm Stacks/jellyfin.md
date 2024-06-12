@@ -6,7 +6,7 @@ comments: true
 
 Your Open-Source Media Server
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![Jellyfin diagram](/assets/diagrams/Jellyfin.png){ loading=lazy }
 
 [Jellyfin](https://jellyfin.org/) is a powerful and open-source media server that puts you in control of your digital media. It offers a seamless and customizable platform for organizing, streaming, and enjoying your movies, TV shows, music, and photos across various devices.
 

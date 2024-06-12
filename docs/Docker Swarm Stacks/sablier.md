@@ -6,7 +6,7 @@ comments: true
 
 On-Demand Workload Management
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![sablier diagram](/assets/diagrams/sablier.png){ loading=lazy }
 
 [Acouvreur/Sablier](https://github.com/acouvreur/sablier) is a free and open-source software solution designed to manage workloads on demand by starting them when needed and stopping them after a period of inactivity. With Sablier, users can optimize resource utilization, reduce costs, and enhance efficiency by automatically scaling workloads based on demand, ensuring that resources are allocated dynamically and efficiently.
 

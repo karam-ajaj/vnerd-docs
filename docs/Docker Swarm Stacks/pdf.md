@@ -6,7 +6,7 @@ comments: true
 
 Simple PDF Generation Service
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![pdf diagram](/assets/diagrams/pdf.png){ loading=lazy }
 
 [sPDF](https://github.com/frooodle/s-pdf) is a lightweight and simple PDF generation service designed to convert HTML content into PDF documents. Built with ease of use and simplicity in mind, sPDF provides a convenient way to generate PDFs from HTML templates or web pages programmatically or through a user-friendly interface.
 

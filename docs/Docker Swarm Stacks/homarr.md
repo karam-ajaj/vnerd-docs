@@ -6,7 +6,7 @@ comments: true
 
 Simplifying Home Automation with Containers
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![homarr diagram](/assets/diagrams/homarr.png){ loading=lazy }
 
 [Homarr](https://github.com/ajnart/homarr) is an open-source project that redefines home automation by leveraging the power of containers. Created by [ajnart](https://github.com/ajnart), this project provides a streamlined approach to managing and orchestrating various home automation services within containerized environments.
 

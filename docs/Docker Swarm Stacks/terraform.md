@@ -6,7 +6,7 @@ comments: true
 
 Infrastructure as Code (IaC) Orchestration Tool
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![terraform diagram](/assets/diagrams/terraform.png){ loading=lazy }
 
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) orchestration tool created by HashiCorp. It allows users to define and provision infrastructure resources using a declarative configuration language, enabling them to manage infrastructure in a predictable and repeatable way across different cloud providers, data centers, and environments.
 

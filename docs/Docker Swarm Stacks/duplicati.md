@@ -6,7 +6,7 @@ comments: true
 
 Open-Source Cloud Backup Software
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![duplicati diagram](/assets/diagrams/duplicati.png){ loading=lazy }
 
 [Duplicati](https://www.duplicati.com/) is a powerful and versatile open-source backup solution designed to protect your data by creating encrypted backups that can be stored on various cloud storage providers or local storage devices. With its user-friendly interface and advanced features, Duplicati offers a comprehensive backup solution for both personal and professional use cases.
 

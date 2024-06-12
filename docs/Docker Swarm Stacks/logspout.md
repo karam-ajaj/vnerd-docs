@@ -6,7 +6,7 @@ comments: true
 
 Lightweight Log Router for Docker Containers
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![logspout diagram](/assets/diagrams/logspout.png){ loading=lazy }
 
 [Logspout](https://github.com/gliderlabs/logspout) is a lightweight log router designed specifically for Docker containers. It collects logs from all containers running on a Docker host and routes them to various destinations, such as log management systems, storage services, or standard output. With its simplicity and flexibility, Logspout makes it easy to centralize and manage logs from Dockerized applications, enabling efficient monitoring, analysis, and troubleshooting.
 

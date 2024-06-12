@@ -6,7 +6,7 @@ comments: true
 
 Bypassing Cloudflare Protection
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![flaresolverr diagram](/assets/diagrams/flaresolverr.png){ loading=lazy }
 
 [FlareSolver](https://github.com/FlareSolverr/FlareSolverr) is a powerful tool designed to bypass Cloudflare protection and access content that is otherwise blocked or protected by Cloudflare's anti-bot measures. By leveraging various techniques and APIs, FlareSolver can help developers and researchers circumvent Cloudflare challenges and retrieve data from protected websites.
 

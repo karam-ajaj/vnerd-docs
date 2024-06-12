@@ -6,7 +6,7 @@ comments: true
 
 Advanced User Invitation and Management System
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![wizarr diagram](/assets/diagrams/wizarr.png){ loading=lazy }
 
 [Wizarr](https://github.com/Wizarr) is an open-source user invitation and management system designed for media server platforms like Jellyfin, Plex, and Emby. It provides administrators with advanced tools for user management, invitation workflows, and access control, enabling seamless integration and management of user accounts across media server deployments.
 

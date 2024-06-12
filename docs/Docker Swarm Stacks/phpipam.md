@@ -6,7 +6,7 @@ comments: true
 
 IP Address Management (IPAM) Solution
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![phpIPAM diagram](/assets/diagrams/phpIPAM.png){ loading=lazy }
 
 [phpIPAM](https://phpipam.net/) is an open-source web-based application for managing IP addresses and subnet allocations in an organization's network infrastructure. It provides a centralized platform for tracking IP address assignments, subnet configurations, DNS records, and VLANs, enabling network administrators to efficiently manage and organize their IP address space.
 

@@ -6,7 +6,7 @@ comments: true
 
 Simplified Docker Container Monitoring
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![dockwatch diagram](/assets/diagrams/dockwatch.png){ loading=lazy }
 
 [Dockwatch](https://github.com/sourcefuse/dockwatch) is an intuitive and open-source monitoring tool designed to simplify the management and oversight of Docker containers. By providing real-time insights into container performance and health, Dockwatch helps developers and system administrators ensure their containerized applications are running smoothly and efficiently.
 

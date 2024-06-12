@@ -6,7 +6,7 @@ comments: true
 
 Fast, Simple, and Flexible Flat-File CMS
 
-![authelia diagram](/assets/diagrams/authelia.png){ loading=lazy }
+![grav diagram](/assets/diagrams/grav.png){ loading=lazy }
 
 [Grav](https://getgrav.org/) is a modern open-source flat-file CMS (Content Management System) built on PHP that requires no database. With its lightweight architecture, flexible design, and powerful features, Grav offers developers and content creators a fast and intuitive platform for building websites, blogs, and web applications.
 
