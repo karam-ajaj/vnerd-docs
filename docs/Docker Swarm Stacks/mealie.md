@@ -6,7 +6,7 @@ comments: true
 
 Open-Source Recipe Management System
 
-![mealie diagram](/assets/diagrams/mealie.png){ loading=lazy }
+![mealie diagram](../assets/diagrams/mealie.png){ loading=lazy }
 
 [Mealie](https://github.com/hay-kot/mealie) is a modern, open-source recipe management system designed to simplify the process of organizing, sharing, and discovering recipes. With its intuitive interface, extensive feature set, and support for various data formats, Mealie provides a versatile platform for individuals, families, and communities to manage their culinary creations.
 

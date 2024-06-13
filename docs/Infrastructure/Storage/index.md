@@ -1,7 +1,28 @@
-Storage is divided into 3 tiers/components:
+# Storage Architecture
 
-1. slow nfs share from Qnap nas to store data and backups.
+The storage system is structured into three distinct tiers/components, each designed for specific purposes to optimize performance and reliability.
 
-2. fast storage using OpenMediaVault as a Proxmox vm using the internal super fast ssd of the NUC, this is used to store configuration files and services databases.
+## Storage Components
 
-3. truenas core server installed on Proliant ML310e Gen 8 server for storing media files, this storage is big configured with RAID 0 and has no redundeancy nor backup.
+### 1. Slow NFS Share
+
+- **Hardware**: QNAP NAS TS-231P
+- **Disks**: Red NAS HDD's
+- **Purpose**: Storing data and backups
+- **Characteristics**: Ideal for long-term storage needs where speed is not a critical factor.
+
+### 2. Fast Storage
+
+- **Hardware**: OpenMediaVault running on a Proxmox VM
+- **Disks**: Internal super-fast SSD of the NUC
+- **Purpose**: Storing configuration files and services databases
+- **Characteristics**: High-speed storage solution for frequently accessed and critical data.
+
+### 3. TrueNAS Core Server
+
+- **Hardware**: Proliant ML310e Gen 8 server
+- **Disks**: Normal Hdd's, configured with RAID 0
+- **Purpose**: Storing media files
+- **Characteristics**: Large capacity with no redundancy or backup, suitable for storing media files where high availability is not a priority.
+
+Each tier serves a specific role, balancing performance, capacity, and redundancy to meet the diverse storage needs of our infrastructure.

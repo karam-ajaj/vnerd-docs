@@ -6,7 +6,7 @@ comments: true
 
 A Lightweight Database Management Tool
 
-![adminer diagram](/assets/diagrams/adminer.png){ loading=lazy }
+![adminer diagram](../assets/diagrams/adminer.png){ loading=lazy }
 
 [Adminer](https://www.adminer.org/) is a powerful, lightweight, and user-friendly database management tool designed to simplify the management of databases. Developed as a single-file PHP application, Adminer offers a comprehensive feature set that rivals more complex database management solutions, making it an ideal choice for developers, database administrators, and webmasters.
 

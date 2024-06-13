@@ -6,7 +6,7 @@ comments: true
 
 <!-- ## CodeProject.AI Server:Empowering AI and Machine Learning at Your Fingertips -->
 
-![ai diagram](/assets/diagrams/ai.png){ loading=lazy }
+![ai diagram](../assets/diagrams/ai.png){ loading=lazy }
 
 [CodeProject.AI Server](https://github.com/CodeProject/AI-Server) is a powerful and versatile platform designed to facilitate the deployment, management, and scaling of AI and machine learning models. Developed by CodeProject, this open-source server aims to democratize access to advanced AI capabilities, making it easier for developers, researchers, and businesses to integrate intelligent features into their applications.
 

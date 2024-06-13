@@ -6,7 +6,7 @@ comments: true
 
 A Simple and Powerful File Manager
 
-![filebrowser diagram](/assets/diagrams/filebrowser.png){ loading=lazy }
+![filebrowser diagram](../assets/diagrams/filebrowser.png){ loading=lazy }
 
 [FileBrowser](https://filebrowser.org/) is a lightweight and easy-to-use file manager that provides a web-based interface for managing files and directories on your server or cloud storage. With its intuitive interface and robust feature set, FileBrowser offers a convenient way to navigate, upload, download, and organize files from anywhere.
 

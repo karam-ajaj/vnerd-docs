@@ -6,7 +6,7 @@ comments: true
 
 Modern Edge Router and Load Balancer
 
-![traefikv3 diagram](/assets/diagrams/traefikv3.png){ loading=lazy }
+![traefikv3 diagram](../assets/diagrams/traefikv3.png){ loading=lazy }
 
 [Traefik v3](https://traefik.io/) is a modern edge router and load balancer designed for microservices architectures and containerized environments. As a cloud-native application proxy, Traefik v3 provides dynamic routing, traffic management, and TLS termination for applications running on Kubernetes, Docker, and other container orchestration platforms.
 

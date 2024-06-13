@@ -6,7 +6,7 @@ comments: true
 
 High Performance Object Storage
 
-![minio diagram](/assets/diagrams/minio.png){ loading=lazy }
+![minio diagram](../assets/diagrams/minio.png){ loading=lazy }
 
 [MinIO](https://min.io/) is a high-performance, open-source object storage system designed for cloud-native and containerized environments. It provides an S3-compatible API that allows developers to store and retrieve unstructured data, such as photos, videos, backups, and log files, with scalability, durability, and security. With its lightweight and easy-to-deploy architecture, MinIO is ideal for building scalable data infrastructure for modern applications.
 

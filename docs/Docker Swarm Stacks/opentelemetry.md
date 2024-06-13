@@ -6,7 +6,7 @@ comments: true
 
 Observability Framework for Cloud-Native Applications
 
-![opentelemetry diagram](/assets/diagrams/opentelemetry.png){ loading=lazy }
+![opentelemetry diagram](../assets/diagrams/opentelemetry.png){ loading=lazy }
 
 [OpenTelemetry](https://opentelemetry.io/) is an open-source observability framework designed to simplify the collection, processing, and visualization of telemetry data in cloud-native applications. By providing standardized APIs, instrumentation libraries, and integrations, OpenTelemetry enables developers to capture and correlate metrics, traces, and logs across distributed systems, allowing for comprehensive monitoring, troubleshooting, and performance optimization.
 

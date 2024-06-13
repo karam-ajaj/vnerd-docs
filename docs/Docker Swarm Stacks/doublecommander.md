@@ -6,7 +6,7 @@ comments: true
 
 A Feature-Rich File Manager
 
-![doublecommander diagram](/assets/diagrams/doublecommander.png){ loading=lazy }
+![doublecommander diagram](../assets/diagrams/doublecommander.png){ loading=lazy }
 
 [Double Commander](https://doublecmd.sourceforge.io/) is a powerful and feature-rich file manager that provides a dual-pane interface, making it easy to navigate and manage files and directories. Designed as an open-source alternative to Total Commander, Double Commander offers a wide range of features and customization options to suit the needs of both novice and advanced users.
 

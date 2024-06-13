@@ -1,28 +1,55 @@
-First things first, lets talk about hardware. Mostly my whole setup is old machines with cpu and some memory.
+# Introduction
 
-I am currently using these devices:
+Lets talk about hardware! Mostly my whole setup is old machines with cpu and some memory.
 
-Linux pc01
-Linux pc02
-6 thin clients
-3 Intel nuc's
-Qnap nas
-2 Old Laptopa
-Raspberry pi2
-Raspberry pi3
-Supermicro rack seever
+---
 
-Software 
-Docker swarm cluster: pc01, laptop, 5 thin clients
-Storage shared nfs nas
+## Compute Devices
 
+- Linux pc01
 
-Backup
-Duplicatie
-Qnap backup 
-External disk backup
+- Linux pc02
 
-Traffic route from internet to services
+- 6 thin clients
+
+- 3 Intel nuc's
+
+- 2 Old Laptopa
+
+- Raspberry pi2
+
+- Raspberry pi3
+
+- Supermicro rack server
+
+---
+
+## Network Devices
+
+- Draytek firewall Vigor 2960
+
+- Dell managed switch (PowerConnect 5524)
+
+- Normal router (access point) 
+
+- Ethernet repeater
+
+- Wireless repeater
+
+- Two unmanaged switches
+
+- fw used as a switch
+
+---
+
+## Storage Devices
+
+Qnap NAS TS-231P
+
+HPE ProLiant ML310e Gen8
+
+---
+
 
 Network diagram
 
@@ -38,13 +65,6 @@ Docker yaml files
 
 32bit cpus
 
-Services overview 
-
-
-Proxmox
-
 Kubernetes cluster
 Longhorn 
 Helm
-
-All my docker yaml files are included in this repo “github”

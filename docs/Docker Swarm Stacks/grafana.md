@@ -6,7 +6,7 @@ comments: true
 
 Observability and Visualization Platform
 
-![grafana diagram](/assets/diagrams/grafana.png){ loading=lazy }
+![grafana diagram](../assets/diagrams/grafana.png){ loading=lazy }
 
 [Grafana](https://grafana.com/) is an open-source platform for monitoring, observability, and visualization, empowering users to create rich, interactive dashboards for monitoring and analyzing time-series data. With its extensive support for various data sources, flexible visualization options, and advanced alerting capabilities, Grafana is widely used by organizations to gain insights into their systems, applications, and infrastructure.
 

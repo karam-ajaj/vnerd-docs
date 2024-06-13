@@ -6,6 +6,17 @@ However, it's important to bear in mind that with great power comes great respon
 
 But fear not! In this captivating series, I will take you on a journey through my own experiences and share how everything eventually falls into place. And the best part? It all comes together seamlessly through a powerful dashboard that truly ties the room together. So get ready to embark on this exciting adventure with me and discover the wonders of hosting your own services at home.
 
-## section1
+## Using dynamic configurations
 
-## section2
+This website is built using MKdocs with taking into consideration to be as dynamic as it can be.
+
+### dynamic configurations
+
+github repositories that are directly connected to the configuration files og MKDoks to ensure all content is dynamically updated 
+
+Diagrams are dynamically and automatically creted and added to the right page
+
+### Content writing
+Most of the content is written using AI generated text 
+
+

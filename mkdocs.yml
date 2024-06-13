@@ -78,6 +78,7 @@ plugins:
   # - projects
   # - optimize
   # - offline
+  
 
   # https://github.com/squidfunk/mkdocs-material/discussions/3458
   # - redirects:

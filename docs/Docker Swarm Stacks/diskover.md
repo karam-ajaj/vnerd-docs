@@ -6,7 +6,7 @@ comments: true
 
 Intelligent Data Management and Analytics
 
-![diskover diagram](/assets/diagrams/diskover.png){ loading=lazy }
+![diskover diagram](../assets/diagrams/diskover.png){ loading=lazy }
 
 [Diskover](https://github.com/shirosaidev/diskover) is an open-source, powerful data management and analytics tool designed to help organizations efficiently manage and visualize their file systems. By providing insights into data usage and storage, Diskover enables users to make informed decisions about data retention, archiving, and resource allocation.
 

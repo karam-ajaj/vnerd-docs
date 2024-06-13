@@ -6,7 +6,7 @@ comments: true
 
 Unified Notification Aggregator
 
-![notifiarr diagram](/assets/diagrams/notifiarr.png){ loading=lazy }
+![notifiarr diagram](../assets/diagrams/notifiarr.png){ loading=lazy }
 
 [Notifiarr](https://github.com/Notifiarr/notifiarr) is a unified notification aggregator designed to centralize and streamline notifications from various sources, such as media servers, download clients, and monitoring systems. With its flexible integration capabilities and customizable alerting mechanisms, Notifiarr provides users with a single platform for receiving, managing, and acting upon notifications, enhancing visibility and control over their digital ecosystem.
 

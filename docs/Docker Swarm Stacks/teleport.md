@@ -6,7 +6,7 @@ comments: true
 
 Secure Access for Infrastructure
 
-![teleport diagram](/assets/diagrams/teleport.png){ loading=lazy }
+![teleport diagram](../assets/diagrams/teleport.png){ loading=lazy }
 
 [Teleport](https://goteleport.com/) is an open-source, cloud-native, and multi-platform solution for secure access to infrastructure and applications across distributed environments. Designed to simplify and enhance access controls, Teleport provides a unified gateway for developers and system administrators to securely access servers, containers, databases, and Kubernetes clusters without exposing sensitive credentials or compromising security.
 

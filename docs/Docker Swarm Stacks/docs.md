@@ -6,7 +6,7 @@ comments: true
 
 Simplified Documentation with Markdown
 
-![docs diagram](/assets/diagrams/docs.png){ loading=lazy }
+![docs diagram](../assets/diagrams/docs.png){ loading=lazy }
 
 [MkDocs](https://www.mkdocs.org/) stands as a versatile and user-friendly documentation tool that transforms simple Markdown files into elegant and responsive websites. Developed with simplicity and ease of use in mind, MkDocs empowers individuals and teams to create professional-looking documentation without the need for complex configurations or technical expertise.
 

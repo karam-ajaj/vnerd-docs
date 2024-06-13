@@ -6,7 +6,7 @@ comments: true
 
 Feature-Rich Remote Desktop Client
 
-![remmina diagram](/assets/diagrams/remmina.png){ loading=lazy }
+![remmina diagram](../assets/diagrams/remmina.png){ loading=lazy }
 
 [Remmina](https://remmina.org/) is a powerful and versatile open-source remote desktop client for managing remote desktop connections on Linux-based operating systems. With its intuitive interface, extensive protocol support, and rich feature set, Remmina provides users with a comprehensive solution for accessing and managing remote desktops, servers, and virtual machines from a single application.
 
