@@ -23,7 +23,7 @@ First you need to deploy the Swarmpit stack (management service in this case) an
 ## Tools used to build this section
 
 ### Diagrams *(Graphviz)*
-Built using Graphviz as container from this project [pmsipilot/docker-compose-viz](https://github.com/pmsipilot/docker-compose-viz).
+Built using [Graphviz](https://graphviz.org/) as container from this project [pmsipilot/docker-compose-viz](https://github.com/pmsipilot/docker-compose-viz).
 
 The script will create a list of all the stacks and generate graphs and copy these images to the relative path to be desplayed in this section.
 
