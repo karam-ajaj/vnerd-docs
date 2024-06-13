@@ -78,6 +78,14 @@ plugins:
   # - projects
   # - optimize
   # - offline
+  # - charts
+  # - pdf-export
+  # - print-site
+  - termynal:
+      title: bash
+      buttons: macos
+      prompt_literal_start:
+        - "$"
   
 
   # https://github.com/squidfunk/mkdocs-material/discussions/3458

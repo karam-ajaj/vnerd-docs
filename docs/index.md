@@ -8,15 +8,19 @@ But fear not! In this captivating series, I will take you on a journey through m
 
 ## Using dynamic configurations
 
-This website is built using MKdocs with taking into consideration to be as dynamic as it can be.
+This website is built using MKDocs with taking into consideration to be as dynamic as it can be.
 
-### dynamic configurations
+More info [here](https://docs.vnerd.nl/Special%20Services/MkDocs/)
 
-github repositories that are directly connected to the configuration files og MKDoks to ensure all content is dynamically updated 
+### Dynamic configurations
 
-Diagrams are dynamically and automatically creted and added to the right page
+GitHub repositories that are directly connected to the configuration files of MKDoks to ensure all content is dynamically updated.
+
+Diagrams are dynamically and automatically creted and added to the right page.
+
+### Github actions
+
+[action](https://docs.vnerd.nl/Special%20Services/GitHub%20Actions/)
 
 ### Content writing
-Most of the content is written using AI generated text 
-
-
+Most of the content is written using AI generated text .
