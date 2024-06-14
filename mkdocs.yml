@@ -110,6 +110,9 @@ markdown_extensions:
   - pymdownx.betterem
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   
 
 extra:

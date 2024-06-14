@@ -12,6 +12,18 @@ Learn about the backup systems in place, including their setup and management.
 
 ---
 
+### [DNS](https://docs.vnerd.nl/Infrastructure/DNS/)
+
+
+
+---
+
+### [Networking](https://docs.vnerd.nl/Infrastructure/Backup/)
+
+
+
+---
+
 ### [OpenVPN Setup](https://docs.vnerd.nl/Infrastructure/OpenVPN/)
 
 Explore the configuration of OpenVPN to ensure secure remote access to the network.
