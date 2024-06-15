@@ -6,11 +6,16 @@ repo_url: https://github.com/karam-ajaj/vnerd-docs
 repo_name: karam-ajaj/vnerd-docs
 # edit_uri: edit/master/docs/
 
+# nav:
+#   - Home: '../'
+#   - User Guide: 'hardware/hardware/index.md'
+#   - Infrastructure Guide: 'Infrastructure/'
+
 # Theme Configuration
 theme:
   name: 'material'
   logo: assets/logos/vnerd-logo-white.png
-  custom_dir: overrides
+  # custom_dir: overrides
   language: en
   font:
     text: Roboto
@@ -41,17 +46,18 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     # - navigation.tabs.sticky
     # - navigation.sections
     # - navigation.expand
-    - navigation.prune
+    # - navigation.prune
     - navigation.path
     - navigation.top
+    # - navigation.indexes
     - header.autohide
     - toc.follow
     # - toc.integrate

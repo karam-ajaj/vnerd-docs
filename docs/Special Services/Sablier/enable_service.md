@@ -25,7 +25,7 @@ services:
 2. Define some variables.
 
 The Sablier plugin configurations in Traefik dynamic configurations will be this file
-``` yaml linenums="1" 
+``` yaml linenums="1" hl_lines="1 2"
 --8<-- "configs/traefikv3/dynamic-config/plugin-sablier.yml"
 ```
 

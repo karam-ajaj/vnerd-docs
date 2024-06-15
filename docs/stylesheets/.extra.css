@@ -1,5 +1,5 @@
 :root {
-  --md-tooltip-width: 6000px;
+  --md-tooltip-width: 600px;
 }
 :root > * {
   --md-tooltip-width: 600000px;
@@ -23,3 +23,7 @@
 .highlight .sb {
   color: #f10f0f;
 }
+
+/* .md-grid {
+  max-width: 2650px; 
+} */

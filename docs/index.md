@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Introduction
 
 Everyone dreams of having a beautiful home lab, or at least that's what I believe. There's something incredibly satisfying about hosting your own services right from the comfort of your own home. Not only does it save you from the burden of monthly costs to external providers, but it also opens up a world of possibilities. 

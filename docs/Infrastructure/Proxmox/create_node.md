@@ -42,7 +42,7 @@ network:
 
 *reboot*
 
-**login from ssh and do the followinf**
+**login from ssh and do the following**
 
 *extend the disk*
 
