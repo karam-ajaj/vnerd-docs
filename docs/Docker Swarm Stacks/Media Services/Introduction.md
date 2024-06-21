@@ -4,7 +4,7 @@ comments: true
 
 Your Comprehensive Resource Hub / All-in-One Self-Hosted Media Stack
 
-![media_services diagram](/assets/diagrams/media_services.png){ loading=lazy }
+![media_services diagram](../../assets/diagrams/media_services.png){ loading=lazy }
 
 ## What is Servarr?
 

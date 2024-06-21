@@ -39,7 +39,7 @@ docker run -d -p 443:8080 -p 80:80 \
 
 ### Traefik Stack Diagram
 
-![traefikv3 diagram](/assets/diagrams/traefikv3.png){ loading=lazy }
+![traefikv3 diagram](../../assets/diagrams/traefikv3.png){ loading=lazy }
 
 ---
 ### Docker Compose File

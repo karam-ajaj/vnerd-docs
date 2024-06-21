@@ -7,6 +7,10 @@ repo_name: karam-ajaj/vnerd-docs
 # edit_uri: edit/master/docs/
 
 # nav:
+#   - Blog:
+#     - blog/index.md
+
+# nav:
 #   - Home: '../'
 #   - User Guide: 'hardware/hardware/index.md'
 #   - Infrastructure Guide: 'Infrastructure/'
@@ -15,7 +19,7 @@ repo_name: karam-ajaj/vnerd-docs
 theme:
   name: 'material'
   logo: assets/logos/vnerd-logo-white.png
-  # custom_dir: overrides
+  custom_dir: overrides
   language: en
   font:
     text: Roboto
@@ -72,10 +76,11 @@ theme:
   # static_templates:
   #   - get
 plugins:
-  #- blog
-      #blog_dir: blog
-      #blog_toc: true
-      #post_dir: "{blog}/articles"
+  - blog:
+      # blog_dir: blog
+      # blog_toc: true
+      # post_dir: blog/posts
+      archive: false
   - search
   - external-markdown
   - awesome-pages
