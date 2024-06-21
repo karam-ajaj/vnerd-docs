@@ -3,7 +3,11 @@ comments: true
 ---
 
 ## ChatGPT
-write a short introduction about {} in markdown language
+write a short introduction about XYZ in markdown language
+
+Haeding
+
+![XYZ diagram](../assets/diagrams/XYZ.png){ loading=lazy }
 
 ## Volumes
 
@@ -17,7 +21,7 @@ No Special requirments
 
 ## Docker swarm file
 ``` yaml linenums="1" 
---8<-- "/docs/github-repos/portainer-compose/stacks/*.yml"
+--8<-- "/docs/github-repos/portainer-compose/stacks/XYZ.yml"
 ```
 
 ## Notes
