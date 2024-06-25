@@ -2,12 +2,13 @@
 draft: false 
 date: 2024-01-31 
 categories:
-  - Hello
-  - World
+  - Automation
+  - HomeLab
 tags:
   - VMware
   - Aria
   - vcf
+slug: hello-world
 ---
 
 # Hello world!
