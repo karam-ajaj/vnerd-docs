@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Swarm files Backup
+# Swarm files Backup (NAS)
 
 ## backup location on NAS:
 /share/files/bkp/swarm-bkp
