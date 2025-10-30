@@ -32,8 +32,8 @@ Enhance your movie-watching experience with Radarr—where automation meets a we
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/radarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/radarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   radarr:
     image: lscr.io/linuxserver/radarr:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/radarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/radarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

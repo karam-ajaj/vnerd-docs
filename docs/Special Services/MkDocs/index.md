@@ -5,7 +5,7 @@ To use [MKDocs](https://github.com/squidfunk/mkdocs-material) in a container I h
 ## Prepare the environment
 
 ``` bash
-nano /nfs-nas-swarm/config/docs/mkdocs.yml
+nano /swarm/config/docs/mkdocs.yml
 theme:
   name: 'material'
 ```
@@ -13,7 +13,7 @@ theme:
 ## Deploy files
 
 ``` bash
-docker run --rm -it -p 8000:8000 -v /nfs-nas-swarm/config/docs:/docs squidfunk/mkdocs-material
+docker run --rm -it -p 8000:8000 -v /swarm/config/docs:/docs squidfunk/mkdocs-material
 ```
 
 ## Build container

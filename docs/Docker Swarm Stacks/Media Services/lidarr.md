@@ -32,8 +32,8 @@ Experience the convenience and precision of Lidarr—a reliable companion for ma
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/lidarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/lidarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -47,8 +47,8 @@ services:
     image: lscr.io/linuxserver/lidarr:latest
     volumes:
      - /etc/localtime:/etc/localtime:ro
-     - /nfs-nas-swarm/config/autopirate/lidarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/lidarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

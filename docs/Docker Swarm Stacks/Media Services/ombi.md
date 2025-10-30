@@ -32,7 +32,7 @@ Enhance your media server experience by incorporating Ombi—a powerful and user
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/ombi
+/swarm/config/autopirate/ombi
 ```
 
 ## Deployment
@@ -45,7 +45,7 @@ services:
   ombi:
     image: lscr.io/linuxserver/ombi:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/ombi:/config
+     - /swarm/config/autopirate/ombi:/config
     networks:
      - autopirate-network
      - traefik-public

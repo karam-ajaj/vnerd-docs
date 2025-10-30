@@ -32,8 +32,8 @@ Generate PDFs effortlessly with sPDF—a simple and versatile PDF generation ser
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

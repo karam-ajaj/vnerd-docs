@@ -32,8 +32,8 @@ Gain deeper insights into your data and systems with Grafana—a powerful and cu
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

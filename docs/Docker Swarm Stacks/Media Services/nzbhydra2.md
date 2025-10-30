@@ -32,7 +32,7 @@ Enhance your Usenet search capabilities with NZBHydra2—a versatile tool that b
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/nzbhydra
+/swarm/config/autopirate/nzbhydra
 ```
 
 ## Deployment
@@ -45,7 +45,7 @@ services:
   nzbhydra2:
     image: lscr.io/linuxserver/nzbhydra2:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/nzbhydra:/config
+     - /swarm/config/autopirate/nzbhydra:/config
     networks:
      - autopirate-network
      - traefik-public

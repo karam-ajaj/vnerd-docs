@@ -32,8 +32,8 @@ Unlock the full potential of observability in your cloud-native applications wit
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

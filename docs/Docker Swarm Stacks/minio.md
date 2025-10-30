@@ -32,8 +32,8 @@ Empower your applications with scalable and high-performance object storage usin
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

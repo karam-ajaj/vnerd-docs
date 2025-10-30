@@ -31,8 +31,8 @@ Experience the joy of automated music discovery and organization with Headphones
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/headphones
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/headphones
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -44,8 +44,8 @@ services:
   headphones:
     image: lscr.io/linuxserver/headphones:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/headphones:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/headphones:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

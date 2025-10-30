@@ -32,8 +32,8 @@ Automate media file management and optimization with TDarr—a powerful and flex
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

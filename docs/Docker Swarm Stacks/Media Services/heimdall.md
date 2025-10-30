@@ -32,7 +32,7 @@ Experience the convenience and efficiency of Heimdall—a unified dashboard solu
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/heimdall
+/swarm/config/autopirate/heimdall
 ```
 
 ## Deployment
@@ -48,7 +48,7 @@ services:
       PGID: '911'
       PUID: '911'
     volumes:
-     - /nfs-nas-swarm/config/autopirate/heimdall:/config
+     - /swarm/config/autopirate/heimdall:/config
      - /etc/localtime:/etc/localtime:ro
     networks:
      - autopirate-network

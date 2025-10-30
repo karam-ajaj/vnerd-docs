@@ -31,8 +31,8 @@ Unlock content behind Cloudflare protection with FlareSolver—a valuable tool f
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

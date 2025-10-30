@@ -32,8 +32,8 @@ Protect your valuable data with Duplicati—a reliable and feature-rich backup s
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

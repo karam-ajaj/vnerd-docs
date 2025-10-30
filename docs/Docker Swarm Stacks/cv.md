@@ -36,8 +36,8 @@ Experience the speed, reliability, and versatility of NGINX—a cornerstone in m
 
 ## Volumes
 ```bash
-/nfs-nas-swarm/config/CV
-/nfs-nas-swarm/data/CV
+/swarm/config/CV
+/swarm/data/CV
 ```
 
 ## Deployment

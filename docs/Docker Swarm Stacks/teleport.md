@@ -32,8 +32,8 @@ Securely access and manage your infrastructure with Teleport—a cloud-native so
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

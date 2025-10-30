@@ -32,8 +32,8 @@ Experience the simplicity and flexibility of Grav—a modern flat-file CMS desig
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

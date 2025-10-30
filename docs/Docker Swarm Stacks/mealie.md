@@ -32,8 +32,8 @@ Simplify your recipe management with Mealie—a modern and versatile recipe mana
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

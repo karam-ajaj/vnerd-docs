@@ -32,8 +32,8 @@ Streamline user management for your media server platform with Wizarr—an advan
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

@@ -34,8 +34,8 @@ Discover the potential of AI and machine learning with CodeProject.AI Server—a
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

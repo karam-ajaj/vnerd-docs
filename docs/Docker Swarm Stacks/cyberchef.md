@@ -32,8 +32,8 @@ Discover the power and flexibility of data manipulation with CyberChef—the ult
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

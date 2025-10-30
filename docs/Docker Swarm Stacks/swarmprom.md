@@ -32,8 +32,8 @@ Monitor and manage your Docker Swarm clusters with ease using Swarmprom—an ope
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

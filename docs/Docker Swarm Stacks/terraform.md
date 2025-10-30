@@ -32,8 +32,8 @@ Automate infrastructure provisioning and management with Terraform—a versatile
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

@@ -31,8 +31,8 @@ Experience the convenience and accuracy of Bazarr—a reliable companion for man
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/bazarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/bazarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -47,8 +47,8 @@ services:
       PGID: '911'
       PUID: '911'
     volumes:
-     - /nfs-nas-swarm/config/autopirate/bazarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/bazarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

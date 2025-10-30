@@ -32,8 +32,8 @@ Unlock your creativity and bring your ideas to life with FreeCAD—a powerful an
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

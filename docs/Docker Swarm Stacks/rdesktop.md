@@ -32,8 +32,8 @@ Access remote Windows desktops and servers with ease using rdesktop—an open-so
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

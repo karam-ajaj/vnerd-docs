@@ -32,8 +32,8 @@ Experience the ease and efficiency of managing your digital comic collection wit
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/mylar
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/mylar
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   mylar:
     image: lscr.io/linuxserver/mylar3:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/mylar:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/mylar:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

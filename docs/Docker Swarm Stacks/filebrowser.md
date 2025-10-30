@@ -32,8 +32,8 @@ Simplify your file management tasks with FileBrowser—a versatile and user-frie
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

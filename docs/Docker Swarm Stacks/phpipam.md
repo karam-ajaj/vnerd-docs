@@ -32,8 +32,8 @@ Simplify IP address management in your network infrastructure with phpIPAM—an 
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment
