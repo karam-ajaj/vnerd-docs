@@ -46,7 +46,7 @@ docker run -d -p 443:8080 -p 80:80 \
    Define the Traefik service with necessary configurations.
    
 ``` yaml linenums="1" 
---8<-- "/docs/github-repos/portainer-compose/stacks/traefikv3.yml"
+--8<-- "/docs/github-repos/portainer-compose/stacks/traefik.yml"
 ```
 
 ---
