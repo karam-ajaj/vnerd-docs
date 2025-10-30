@@ -7,7 +7,7 @@ services:
       PUID: '911'
       TZ: Europe/Amsterdam
     volumes:
-     - /nfs-nas-swarm/data/wizarr:/data/database
+     - /swarm/data/wizarr:/data/database
     networks:
      - traefik-public
      - internal
