@@ -155,17 +155,11 @@ networks:
     external: true
 ```
 
+## Docker swarm file
 Edit the deployment parameters, so the stack should be like this 
 
 ``` yaml linenums="1" 
 --8<-- "/docs/github-repos/portainer-compose/stacks/traefik.yml"
-```
-
-## Docker swarm file
-After configuring the requierd stacks deploy as the following:
-
-```yaml
-
 ```
 
 ## Notes
