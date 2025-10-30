@@ -6,27 +6,37 @@ hide:
 
 # Introduction
 
-Everyone dreams of having a beautiful home lab, or at least that's what I believe. There's something incredibly satisfying about hosting your own services right from the comfort of your own home. Not only does it save you from the burden of monthly costs to external providers, but it also opens up a world of possibilities. 
+Everyone dreams of having a beautiful homelab—or at least I do. There’s something deeply satisfying about running your own services at home. You avoid recurring costs, you learn a ton, and you get the freedom to build exactly what you need.
 
-However, it's important to bear in mind that with great power comes great responsibility. Setting up your own home lab comes with its fair share of challenges. Security, redundancy, backup, administration, and documentation are just a few of the factors that need to be carefully considered. 
+With that freedom comes responsibility: security, redundancy, backups, administration, and, yes, documentation. This site is equal parts documentation and technical blog. I share what I’m running, why I chose it, and the exact steps to reproduce it—warts and all.
 
-But fear not! In this captivating series, I will take you on a journey through my own experiences and share how everything eventually falls into place. And the best part? It all comes together seamlessly through a powerful dashboard that truly ties the room together. So get ready to embark on this exciting adventure with me and discover the wonders of hosting your own services at home.
+And because great systems deserve a great front door, there’s a dashboard that truly ties the room together—powered by my [Atlas](https://github.com/karam-ajaj/atlas) project.
+
+> “That rug really tied the room together.”
+
+<!-- ![The Big Lebowski — the rug that ties the room together](assets/images/The%20Big%20Lebowski.jpg){ loading=lazy } -->
+
+What you’ll find here:
+
+- Docker Swarm stacks with deploy-ready YAML, diagrams, and step‑by‑step guides
+- Infrastructure notes (networking, storage, Proxmox, VPN, PXE, DNS, backup, and more)
+- Tooling and automation that keep the docs in sync with the live lab
 
 ## Using dynamic configurations
 
-This website is built using MKDocs with taking into consideration to be as dynamic as it can be.
+This site is built with MkDocs Material and intentionally designed to be dynamic as the lab evolves.
 
-More info [here](https://docs.vnerd.nl/Special%20Services/MkDocs/)
+More details: [Special Services → MkDocs](https://docs.vnerd.nl/Special%20Services/MkDocs/)
 
 ### Dynamic configurations
 
-GitHub repositories that are directly connected to the configuration files of MKDoks to ensure all content is dynamically updated.
-
-Diagrams are dynamically and automatically creted and added to the right page.
+- GitHub repositories are connected directly to the MkDocs configuration using external markdown includes (`--8<--`) so content stays current without copy/paste. Most service YAML lives in the [portainer-compose repository](https://github.com/karam-ajaj/portainer-compose).
+- Diagrams are generated automatically and added to the relevant pages for each stack.
 
 ### Github actions
 
-[action](https://docs.vnerd.nl/Special%20Services/GitHub%20Actions/)
+[GitHub Actions](https://docs.vnerd.nl/Special%20Services/GitHub%20Actions/) orchestrate parts of the automation pipeline that builds and publishes this site.
 
 ### Content writing
-Most of the content is written using AI generated text .
+
+Narrative sections are AI-assisted to improve readability. All commands, paths, and YAML are sourced from the actual repositories or verified against the running homelab.
