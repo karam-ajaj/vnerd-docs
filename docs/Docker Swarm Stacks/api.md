@@ -32,8 +32,8 @@ Experience the efficiency and clarity of API development with Swagger—a framew
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

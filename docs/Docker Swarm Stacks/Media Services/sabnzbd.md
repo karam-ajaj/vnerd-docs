@@ -33,7 +33,7 @@ Experience the simplicity and efficiency of Usenet downloads with SABnzbd—a re
 
 ```bash
 nfs-nas-swarm/config/autopirate/sabnzbd
-/nfs-nas-swarm/data/autopirate/data
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   sabnzbd:
     image: lscr.io/linuxserver/sabnzbd:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/sabnzbd:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/sabnzbd:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

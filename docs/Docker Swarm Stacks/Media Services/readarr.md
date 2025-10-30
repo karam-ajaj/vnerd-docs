@@ -32,8 +32,8 @@ Discover the joy of managing your literary collection effortlessly with Readarrâ
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/readarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/readarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   readarr:
     image: lscr.io/linuxserver/readarr:nightly
     volumes:
-     - /nfs-nas-swarm/config/autopirate/readarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/readarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

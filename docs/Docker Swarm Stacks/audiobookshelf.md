@@ -32,8 +32,8 @@ Transform your audiobook collection into a personalized, accessible library with
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

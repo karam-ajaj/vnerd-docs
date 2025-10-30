@@ -32,8 +32,8 @@ Harness the power and performance of Nginx—a versatile and reliable web server
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

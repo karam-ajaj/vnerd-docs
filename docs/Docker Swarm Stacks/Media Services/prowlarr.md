@@ -32,8 +32,8 @@ Experience the convenience of Prowlarr—a unifying solution for enthusiasts who
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/prowlarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/prowlarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:nightly
     volumes:
-     - /nfs-nas-swarm/config/autopirate/prowlarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/prowlarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

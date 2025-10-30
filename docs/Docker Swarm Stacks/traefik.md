@@ -39,8 +39,8 @@ Experience the agility and simplicity of Traefik—a reverse proxy designed for 
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/traefik
-/nfs-nas-swarm/data/traefik
+/swarm/config/traefik
+/swarm/data/traefik
 ```
 
 ## Deployment
@@ -113,7 +113,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       # Mount the volume to store the certificates
 #      - traefik-public-certificates:/certificates
-      - /nfs-nas-swarm/config/trafiek/certificates:/certificates
+      - /swarm/config/trafiek/certificates:/certificates
     command:
       # Enable Docker in Traefik, so that it reads labels from Docker services
       - --providers.docker

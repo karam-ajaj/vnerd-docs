@@ -37,13 +37,13 @@ Welcome to the world of Authelia, where security meets simplicity!
 
 ## Volumes
 ```bash
-/nfs-nas-swarm/config/swarmpit
-/nfs-nas-swarm/data/swarmpit
+/swarm/config/swarmpit
+/swarm/data/swarmpit
 ```
 
 ## Deployment
 
-Edit configuration files in /nfs-nas-swarm/config/authelia
+Edit configuration files in /swarm/config/authelia
 ```yaml
 ###############################################################
 #                   Authelia configuration                    #

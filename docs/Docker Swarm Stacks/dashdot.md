@@ -31,8 +31,8 @@ Monitor your server's performance effortlessly with Dashdot—a powerful and cus
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

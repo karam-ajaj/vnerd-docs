@@ -32,7 +32,7 @@ Simplify container management and orchestration with Portainer—an intuitive an
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/data/portainer
+/swarm/data/portainer
 ```
 
 ## Deployment

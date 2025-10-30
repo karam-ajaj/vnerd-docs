@@ -18,7 +18,7 @@ do
     sleep 1
 done
 
-# rm /nfs-nas-swarm/github-repos/portainer-compose/diagrams/temp/docker-compose.yml
-# rm /nfs-nas-swarm/github-repos/portainer-compose/diagrams/temp/docker-compose.png
+# rm /swarm/github-repos/portainer-compose/diagrams/temp/docker-compose.yml
+# rm /swarm/github-repos/portainer-compose/diagrams/temp/docker-compose.png
 # rm /swarm/config/docs/github-repos/portainer-compose/diagrams/temp/0template.png
 cp -r /swarm/config/docs/docs/assets/diagrams /swarm/config/docs/github-repos/portainer-compose/diagrams

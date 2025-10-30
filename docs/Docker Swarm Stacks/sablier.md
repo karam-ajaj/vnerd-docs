@@ -32,8 +32,8 @@ Optimize resource utilization and streamline workload management with Acouvreur/
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

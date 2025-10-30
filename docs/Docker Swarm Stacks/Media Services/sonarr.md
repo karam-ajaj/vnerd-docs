@@ -32,8 +32,8 @@ Elevate your TV show library to new heights with Sonarr—a versatile and user-f
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/sonarr
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/sonarr
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/sonarr:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/sonarr:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

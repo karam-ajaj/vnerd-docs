@@ -32,8 +32,8 @@ Enhance your microservices architecture with Traefik v3—a cloud-native edge ro
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

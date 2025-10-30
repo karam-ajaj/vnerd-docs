@@ -32,8 +32,8 @@ Gain valuable insights into your Plex Media Server usage with Tautulli—a featu
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

@@ -32,8 +32,8 @@ Experience the ease and efficiency of web-based database management with CloudBe
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

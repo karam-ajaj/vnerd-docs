@@ -58,8 +58,8 @@ lvresize -r -l+100%FREE /dev/ubuntu-vg/ubuntu-lv
 ```
 sudo -s
 apt install nfs-common -y
-mkdir /nfs-nas-swarm
-echo "10.10.10.210:/share/NFSv=4/nfs-nas-swarm /nfs-nas-swarm nfs rw,nolock 0 0" >> /etc/fstab
+mkdir /swarm
+echo "10.10.10.210:/share/NFSv=4/swarm /swarm nfs rw,nolock 0 0" >> /etc/fstab
 mount -a
 ```
 

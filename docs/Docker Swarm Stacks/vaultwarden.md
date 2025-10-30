@@ -34,7 +34,7 @@ Secure your passwords with confidence using Vaultwarden—an open and self-hoste
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/data/bitwarden
+/swarm/data/bitwarden
 ```
 
 ## Deployment

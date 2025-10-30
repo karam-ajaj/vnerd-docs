@@ -89,4 +89,4 @@ cd docs/assets/diagrams/temp && ./generate_script.sh
 - **Content source**: https://github.com/karam-ajaj/portainer-compose (main config repository)
 - **Diagram generation**: `pmsipilot/docker-compose-viz` Docker container
 - **AI content**: ChatGPT-generated service introductions
-- **Infrastructure**: Hosted on Docker Swarm with NFS shared storage (`/nfs-nas-swarm/`)
+- **Infrastructure**: Hosted on Docker Swarm with NFS shared storage (`/swarm/`)

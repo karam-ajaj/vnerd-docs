@@ -32,8 +32,8 @@ Discover the joy of maintaining a well-organized digital bookshelf with LazyLibr
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/lazylibrarian
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/lazylibrarian
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   lazylibrarian:
     image: lscr.io/linuxserver/lazylibrarian:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/lazylibrarian:/config
-     - /nfs-nas-swarm/data/autopirate/data:/books
+     - /swarm/config/autopirate/lazylibrarian:/config
+     - /swarm/data/autopirate/data:/books
     networks:
      - autopirate-network
      - traefik-public

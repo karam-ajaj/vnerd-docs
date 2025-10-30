@@ -32,8 +32,8 @@ Experience the convenience and efficiency of managing your BitTorrent downloads 
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/rutorrent
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/rutorrent
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -48,8 +48,8 @@ services:
     ports:
      - 36258:36258
     volumes:
-     - /nfs-nas-swarm/config/autopirate/rutorrent:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/rutorrent:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

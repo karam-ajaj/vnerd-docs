@@ -34,7 +34,7 @@ Experience the power of streamlined documentation creation with MkDocs, where Ma
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/data/docs
+/swarm/data/docs
 ```
 
 ## Deployment
@@ -42,7 +42,7 @@ Experience the power of streamlined documentation creation with MkDocs, where Ma
 First you should create a config file "mkdocs.yml" on the shared volume.
 
 ```bash
-nano /nfs-nas-swarm/config/docs/mkdocs.yml
+nano /swarm/config/docs/mkdocs.yml
 theme:
   name: 'material'
 ```
@@ -50,7 +50,7 @@ theme:
 you can grab a default config file by deploying a temp container
 
 ```bash
-docker run --rm -it -p 8000:8000 -v /nfs-nas-swarm/config/docs:/docs squidfunk/mkdocs-material 
+docker run --rm -it -p 8000:8000 -v /swarm/config/docs:/docs squidfunk/mkdocs-material 
 ```
 
 ## Docker swarm file

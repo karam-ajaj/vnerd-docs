@@ -36,10 +36,10 @@ Experience the freedom of managing and enjoying your media on your terms with Je
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/jellyfin/config
-/nfs-nas-swarm/config/jellyfin/cache
-/nfs-nas-swarm/data/media
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/jellyfin/config
+/swarm/config/jellyfin/cache
+/swarm/data/media
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -55,10 +55,10 @@ services:
       PGID: '0'
       PUID: '0'
     volumes:
-     - /nfs-nas-swarm/config/jellyfin/config:/config
-     - /nfs-nas-swarm/config/jellyfin/cache:/cache
-     - /nfs-nas-swarm/data/media:/media
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/jellyfin/config:/config
+     - /swarm/config/jellyfin/cache:/cache
+     - /swarm/data/media:/media
+     - /swarm/data/autopirate/data:/data
     networks:
      - internal
      - traefik-public

@@ -34,8 +34,8 @@ Experience the future of collaborative and cloud-native development with Coderâ€
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/coder
-/nfs-nas-swarm/config
+/swarm/config/coder
+/swarm/config
 ```
 
 ## Deployment

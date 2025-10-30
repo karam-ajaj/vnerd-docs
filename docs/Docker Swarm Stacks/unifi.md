@@ -32,8 +32,8 @@ Simplify and streamline your network management with UniFi—an integrated netwo
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

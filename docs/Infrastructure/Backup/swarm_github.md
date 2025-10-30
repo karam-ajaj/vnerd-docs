@@ -21,7 +21,7 @@ it can be found in [step_4](https://docs.vnerd.nl/Infrastructure/Backup/swarm_gi
 ### Local git files
 local git files needed to be reconfigured so GitHub can accept these files
 ```
-root@f64d5b00f1c3:/home/coder/nfs-nas-swarm/config# cat .git/config 
+root@f64d5b00f1c3:/home/coder/swarm/config# cat .git/config 
 [core]
         repositoryformatversion = 0
         filemode = true
@@ -60,7 +60,7 @@ root@pxsw01:/swarm/config# cat .gitattributes
 ```
 
 ```
-root@f64d5b00f1c3:/home/coder/nfs-nas-swarm/config# cat .gitignore 
+root@f64d5b00f1c3:/home/coder/swarm/config# cat .gitignore 
 # exclude docs folder (another repository)
 /docs
 ```

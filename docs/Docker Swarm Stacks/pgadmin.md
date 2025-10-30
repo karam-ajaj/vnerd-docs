@@ -32,8 +32,8 @@ Manage and develop PostgreSQL databases with ease using pgAdmin—a powerful and
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

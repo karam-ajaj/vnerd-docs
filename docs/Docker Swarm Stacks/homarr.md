@@ -34,8 +34,8 @@ Experience the future of home automation through simplicity and containerization
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/homarr
-/nfs-nas-swarm/data/homarr
+/swarm/config/homarr
+/swarm/data/homarr
 ```
 
 ## Deployment

@@ -32,8 +32,8 @@ Monitor your network with confidence using LibreNMS—a flexible and scalable ne
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

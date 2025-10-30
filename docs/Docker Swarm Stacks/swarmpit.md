@@ -36,8 +36,8 @@ Discover the convenience and efficiency of Docker Swarm management with Swarmpit
 
 ## Volumes
 ```bash
-/nfs-nas-swarm/config/swarmpit
-/nfs-nas-swarm/data/swarmpit
+/swarm/config/swarmpit
+/swarm/data/swarmpit
 ```
 
 ## Deployment

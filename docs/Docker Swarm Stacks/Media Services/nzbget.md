@@ -32,8 +32,8 @@ Experience the speed and efficiency of NZBGet—a versatile Usenet downloader cr
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/nzbget
-/nfs-nas-swarm/data/autopirate/data
+/swarm/config/autopirate/nzbget
+/swarm/data/autopirate/data
 ```
 
 ## Deployment
@@ -46,8 +46,8 @@ services:
   nzbget:
     image: lscr.io/linuxserver/nzbget:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/nzbget:/config
-     - /nfs-nas-swarm/data/autopirate/data:/data
+     - /swarm/config/autopirate/nzbget:/config
+     - /swarm/data/autopirate/data:/data
     networks:
      - autopirate-network
      - traefik-public

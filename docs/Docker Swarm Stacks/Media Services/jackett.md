@@ -32,7 +32,7 @@ Experience the efficiency and simplicity of Jackett—a universal torrent search
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/autopirate/jackett
+/swarm/config/autopirate/jackett
 ```
 
 ## Deployment
@@ -45,7 +45,7 @@ services:
   jackett:
     image: lscr.io/linuxserver/jackett:latest
     volumes:
-     - /nfs-nas-swarm/config/autopirate/jackett:/config
+     - /swarm/config/autopirate/jackett:/config
     networks:
      - autopirate-network
      - traefik-public

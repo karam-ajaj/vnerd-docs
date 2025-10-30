@@ -32,8 +32,8 @@ Monitor network latency and packet loss with ease using SmokePing—a powerful a
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment

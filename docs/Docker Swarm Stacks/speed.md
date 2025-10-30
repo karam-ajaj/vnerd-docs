@@ -32,8 +32,8 @@ Monitor your internet connection's speed and performance with ease using LinuxSe
 ## Volumes
 
 ```bash
-/nfs-nas-swarm/config/
-/nfs-nas-swarm/data/
+/swarm/config/
+/swarm/data/
 ```
 
 ## Deployment
