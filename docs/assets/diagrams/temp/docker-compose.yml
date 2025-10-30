@@ -7,10 +7,10 @@ services:
       PUID: '911'
       TZ: Europe/Amsterdam
     volumes:
-     - /swarm/data/wizarr:/data/database
+      - /swarm/data/wizarr:/data/database
     networks:
-     - traefik-public
-     - internal
+      - traefik-public
+      - internal
     logging:
       driver: json-file
     deploy:
@@ -26,10 +26,11 @@ services:
         traefik.http.routers.wizarr-https.tls: 'true'
         traefik.docker.network: traefik-public
         traefik.enable: 'true'
+        traefik.http.routers.wizarr-https.middlewares: health-rewrite@file
       placement:
         constraints:
-         - node.labels.Arch!=i686
-         - node.labels.worker==enabled
+          - node.labels.Arch!=i686
+          - node.labels.worker==enabled
 networks:
   internal:
     driver: overlay
