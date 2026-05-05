@@ -1,7 +1,4 @@
 mkdocs>=1.6
 mkdocs-material>=9.5
 pymdown-extensions>=10.0
-mkdocs-awesome-pages-plugin
-mkdocs-mermaid2-plugin
-mkdocs-git-revision-date-localized-plugin
-mkdocs-minify-plugin
+mkdocs-external-markdown
