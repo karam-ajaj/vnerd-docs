@@ -4,4 +4,4 @@ pymdown-extensions>=10.0
 
 mkdocs-embed-external-markdown
 mkdocs-awesome-pages-plugin
-mkdocs-termynal
+mkdocs-material-extensions
