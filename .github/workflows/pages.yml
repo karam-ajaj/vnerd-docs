@@ -1,4 +1,7 @@
-name: Deploy MkDocs (Docker)
+name: Deploy MkDocs
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   push:
@@ -19,17 +22,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build MkDocs site using Docker
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
         run: |
-          docker build -t mkdocs-site .
+          pip install --upgrade pip
+          pip install -r requirements.txt
 
-          docker run --rm \
-            -v ${{ github.workspace }}:/docs \
-            -w /docs \
-            mkdocs-site \
-            mkdocs build --clean
+      - name: Build MkDocs site
+        run: |
+          mkdocs build --clean
 
-      - name: Upload artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
