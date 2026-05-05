@@ -1,5 +1,8 @@
 name: Deploy MkDocs
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     branches:
@@ -16,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -26,12 +29,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
+          pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Build site
-        run: mkdocs build
+      - name: Build MkDocs site
+        run: |
+          mkdocs build --clean
 
-      - name: Upload artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
