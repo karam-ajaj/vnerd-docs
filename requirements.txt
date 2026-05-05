@@ -1,5 +1,4 @@
 mkdocs>=1.6
 mkdocs-material>=9.5
 pymdown-extensions>=10.0
-external-markdown
-awesome-pages
+mkdocs-embed-external-markdown
